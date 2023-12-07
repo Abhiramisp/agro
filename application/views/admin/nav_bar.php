@@ -117,8 +117,8 @@
                         <div class="collapse" id="collLayout" aria-labelledby="headingOne"
                             data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav">
-                                <a class="nav-link" href="layout-sidenav-light.html">Transaction Detials</a>
-                                <a class="nav-link" href="layout-sidenav-light.html">Transaction Amount</a>
+                                <a class="nav-link" href="Admin_transactionHistory">Transaction Detials</a>
+                                <a class="nav-link" href="Admin_transactionAmount">Transaction Amount</a>
                             </nav>
                         </div>
                         <!-- Product -->
@@ -154,7 +154,7 @@
                         </div>
 
                         <!-- sales detials -->
-                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collout"
+                        <a class="nav-link collapsed" href="Admin_salesReport"
                             aria-expanded="false" aria-controls="collapseLayouts">
                             <div class="sb-nav-link-icon"><i class="fa-solid fa-file"></i></div>
                             Sales Detials
