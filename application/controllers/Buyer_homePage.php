@@ -23,7 +23,9 @@ class Buyer_homePage extends CI_Controller {
         $this->load->view('header');
 		$this->load->view("buyers/nav");
         $this->load->view('model_search');
-        $this->load->view('hero');
+        $this->load->view('buyers/hero');
+        $this->load->view('buyers/star_product');
+        $this->load->view('buyers/bestsaler_product');
         $this->load->view('Featurs1');
         $this->load->view('buyers/Fruits');
         $this->load->view('Featurs');
@@ -32,6 +34,7 @@ class Buyer_homePage extends CI_Controller {
         $this->load->view('buyers/bestsaler_product');
         $this->load->view('fact');
         $this->load->view('tastimonial');
+		$this->load->view('recently_viewed');
 		$this->load->view('buyers/logoutModel');	
 		$this->load->view('footer');
 	}

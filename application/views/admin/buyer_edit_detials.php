@@ -101,9 +101,9 @@
                                         </div>
                                     
                                         <div class="control-group">
-                                            <input class="form-control" rows="1" id="" name=""
+                                            <textarea class="form-control" rows="1" id="" name=""
                                                 placeholder="Shipping Location" 
-                                                data-validation-required-message="Please enter you Shipping Location"/>
+                                                data-validation-required-message="Please enter you Shipping Location"></textarea>
                                             <p class="help-block text-danger"></p>
                                         </div>
 
@@ -115,9 +115,9 @@
                                         </div>
 
                                         <div class="control-group">
-                                            <input class="form-control" rows="1" id="" name=""
+                                            <textarea class="form-control" rows="1" id="" name=""
                                                 placeholder="Company Location" 
-                                                data-validation-required-message="Please enter you Company Location"/>
+                                                data-validation-required-message="Please enter you Company Location"></textarea>
                                             <p class="help-block text-danger"></p>
                                         </div>
 

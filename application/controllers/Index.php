@@ -24,14 +24,16 @@ class Index extends CI_Controller {
         $this->load->view('nav');
         $this->load->view('model_search');
         $this->load->view('hero');
+        $this->load->view('star_product');
+        $this->load->view('bestsaler_product');
         $this->load->view('Featurs1');
         $this->load->view('Fruits');
         $this->load->view('Featurs');
         $this->load->view('Vesitable');
         $this->load->view('banner');
-        $this->load->view('bestsaler_product');
         $this->load->view('fact');
         $this->load->view('tastimonial');
+		$this->load->view('recently_viewed');
 		$this->load->view('footer');
 	}
 }

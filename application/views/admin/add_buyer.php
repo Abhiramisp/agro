@@ -108,9 +108,9 @@
                                         </div>
 
                                         <div class="control-group">
-                                            <textarea class="form-control" rows="1" id="" name=""
+                                            <input class="form-control" rows="1" id="" name=""
                                                 placeholder="Company Name" 
-                                                data-validation-required-message="Please enter you Company Name"></textarea>
+                                                data-validation-required-message="Please enter you Company Name"/>
                                             <p class="help-block text-danger"></p>
                                         </div>
 
