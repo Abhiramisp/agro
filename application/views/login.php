@@ -13,8 +13,8 @@
                         <div class="col-md-6 col-lg-7 d-flex align-items-center">
                             <div class="card-body p-4 p-lg-5 text-black">
 
-                                <form id="loginForm" method="POST" enctype="multipart/form-data"
-                                    onsubmit="return loginFunction()">
+                                <form action="<?php echo base_url(); ?>index.php/Login_action" method="POST" enctype="multipart/form-data"
+                                    onsubmit="">
                                     <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Sign into your
                                         account</h5>
 
@@ -35,23 +35,23 @@
                                         <div class="form-check-inline">
                                             <input type="radio" class="form-check-input" id="customCheck2"
                                                 name="optradio" value="farmer">
-                                            <label class="form-check-label" for="customCheck2">Farmer</label>
+                                            <label class="form-check-label" for="customCheck2">Seller</label>
                                         </div>
                                         <div class="form-check-inline">
                                             <input type="radio" class="form-check-input" id="customCheck"
-                                                name="optradio" value="agent">
+                                                name="optradio" value="buyer">
                                             <label class="form-check-label" for="customCheck">Buyer</label>
                                         </div>
                                         <div class="form-check-inline">
                                             <input type="radio" class="form-check-input" id="customCheck3"
-                                                name="optradio" value="buyer">
+                                                name="optradio" value="freelancer">
                                             <label class="form-check-label" for="customCheck3">Freelancer</label>
 
                                         </div>
                                         <div class="form-check-inline">
-                                            <input type="radio" class="form-check-input" id="customCheck3"
+                                            <input type="radio" class="form-check-input" id="customCheck4"
                                                 name="optradio" value="transport">
-                                            <label class="form-check-label" for="customCheck3">Transport</label>
+                                            <label class="form-check-label" for="customCheck4">Transport</label>
 
                                         </div>
                                     </div>
@@ -60,7 +60,7 @@
                                         <!-- Freelancer_homePage  Farmer_homePage   buyer_homePage    Transpoter_homePage-->
 
                                         <button class="btn btn-outline-primary btn-lg btn-block" type="submit"
-                                            onclick="loginFunction()">Login</button>
+                                            >Login</button>
                                     </div>
 
                                     <a class="small text-muted" href="#!">Forgot password?</a>
@@ -69,31 +69,7 @@
                                             style="color: #393f81;">Register here</a></p>
 
                                 </form>
-                                <script>
-                                    function loginFunction() {
-                                        var selectedValue = document.querySelector('input[name="optradio"]:checked').value;
-                                        var form = document.getElementById('loginForm');
-
-                                        switch (selectedValue) {
-                                            case 'farmer':
-                                                 form.action = '<?php echo base_url(); ?>index.php/Farmer_homePage';
-                                                break;
-                                            case 'agent':
-                                                 form.action = '<?php echo base_url(); ?>index.php/buyer_homePage';
-                                                break;
-                                            case 'buyer':
-                                                 form.action = '<?php echo base_url(); ?>index.php/Freelancer_homePage';
-                                                break;
-                                            case 'transport':
-                                                 form.action = '<?php echo base_url(); ?>index.php/Transpoter_homePage';
-                                                break;
-                                            default:
-                                                // Default action or error handling
-                                                break;
-                                        }
-                                        return true;
-                                    }
-                                </script>
+                              
 
                             </div>
                         </div>

@@ -21,6 +21,7 @@ class Admin_addProduct extends CI_Controller
 	 */
 	public function index()
 	{
+		
 		$this->load->view('admin/header');
 		$this->load->view('admin/nav_bar');
 		$this->load->view('admin/add_product');

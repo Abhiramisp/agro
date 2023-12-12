@@ -24,4 +24,9 @@ class Agro_model extends CI_Model
             return TRUE;
         }
     }
+    public function getdatafromtable($table)
+	{
+		$query = $this->db->get_where($table);
+		return $query->result();
+	}
 }

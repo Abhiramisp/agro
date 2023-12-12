@@ -15,157 +15,120 @@
                                     <div class="col-12">
                                         <div class="contact-form">
                                             <div id="success"></div>
-                                            <form action="#" method="POST" enctype="multipart/form-data">
+                                            <form action="<?php echo base_url(); ?>index.php/Admin_productAdd"
+                                                method="POST" enctype="multipart/form-data">
 
                                                 <div class="form-row row">
 
-                                                    <div class="">
+                                                    <div class="col-sm-12">
                                                         <div class="control-group">
-                                                            <input type="text" class="form-control" id="fname"
-                                                                name="fname" placeholder="Product Name"
+                                                            <input type="text" class="form-control" id="p_name"
+                                                                name="p_name" placeholder="Product Name"
                                                                 required="required"
                                                                 data-validation-required-message="Please enter Product Name" />
                                                             <p class="help-block text-danger"></p>
                                                         </div>
                                                     </div>
-                                                    <div class="">
-                                                        <div class="control-group">
-                                                            <textarea type="email" class="form-control" id="fmail"
-                                                                name="fmail" placeholder="Product Discription" rows="3"
-                                                                required="required"
-                                                                data-validation-required-message="Please enter Product Discription"></textarea>
-                                                            <p class="help-block text-danger"></p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="">
-                                                        <div class="control-group">
-                                                            <input type="text" class="form-control" id="fmobile"
-                                                                name="fmobile" placeholder="Product Type"
-                                                                required="required"
-                                                                data-validation-required-message="Please enter Product Type" />
-                                                            <p class="help-block text-danger"></p>
-                                                        </div>
-                                                    </div>
+
                                                 </div>
                                                 <div class="form-row row">
-                                                    <div class="col-sm-12 col-md-3 col-lg">
+                                                    <div class="col-sm-12">
                                                         <div class="control-group ">
                                                             <meta http-equiv="Content-Type"
                                                                 content="text/html; charset=UTF-8">
 
-                                                            <select class="form-control bg-white" id="" name="" size="1"
-                                                                onchange="">
+                                                            <select class="form-control bg-white" id="p_categories"
+                                                                name="p_categories" size="1" onchange="">
                                                                 <option value="" disabled selected>Choose Category
                                                                 </option>
-                                                                <option default> Ariyalur</option>
-                                                                <option value="Chengalpattu">Chengalpattu</option>
-                                                                <option value="Chennai">Chennai</option>
-                                                                <option value="Coimbatore">Coimbatore</option>
-                                                                <option value="Cuddalore">Cuddalore</option>
+                                                                <option default>Fruits</option>
+                                                                <option value="Vegetables">Vegetables</option>
+                                                                <option value="Pulse">Pulse</option>
+                                                                <option value="Cereals">Cereals</option>
                                                             </select>
+                                                            <p class="help-block text-danger"></p>
                                                         </div>
                                                     </div>
-                                                    <div class="col-sm-12 col-md-3 col-lg">
-                                                        <div class="control-group ">
-                                                            <meta http-equiv="Content-Type"
-                                                                content="text/html; charset=UTF-8">
 
-                                                            <select class="form-control bg-white" id="" name="" size="1"
-                                                                onchange="">
-                                                                <option value="" disabled selected>Choose Sub Category
-                                                                </option>
-                                                                <option default> Ariyalur</option>
-                                                                <option value="Chengalpattu">Chengalpattu</option>
-                                                                <option value="Chennai">Chennai</option>
-                                                                <option value="Coimbatore">Coimbatore</option>
-                                                                <option value="Cuddalore">Cuddalore</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-sm-12 col-md-3 col-lg">
+                                                    <div class="col-sm-12">
                                                         <div class="control-group">
-                                                            <input type="text" class="form-control" id="fpassword"
-                                                                name="fpassword" placeholder="Product Quantity"
+                                                            <input type="text" class="form-control" id="p_subcat"
+                                                                name="p_subcat" placeholder="Sub Category"
                                                                 required="required"
-                                                                data-validation-required-message="Please enter a Product Quantity" />
+                                                                data-validation-required-message="Please enter a Sub Category" />
                                                             <p class="help-block text-danger"></p>
                                                         </div>
 
                                                     </div>
-                                                    <div class="col-sm-12 col-md-3 col-lg">
-                                                        <div class="control-group">
-                                                            <input type="text" class="form-control" id="" name=""
-                                                                placeholder="Product Price" required="required"
-                                                                data-validation-required-message="Please enter a Product Price" />
-                                                            <p class="help-block text-danger"></p>
-                                                        </div>
 
-                                                    </div>
                                                 </div>
 
+                                                <div class="control-group">
+                                                    <div class="form-group col-md-6">
+
+                                                        <label for="inputPassword4">Organic/Inorganic</label><br>
+                                                        <div class=" container">
+                                                            <input type="radio" class="mr-2" id="p_in_or" name="p_in_or"
+                                                                value="YES">Organic<br>
+                                                            <input type="radio" class="mr-2" id="p_in_or" name="p_in_or"
+                                                                value="NO">Inorganic <br>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-sm-12">
+                                                        <div class="control-group">
+                                                            <div class="row">
+                                                                <label for="" class="col-md-2   x"><b>Shelf Life:</b></label>
+                                                            <input type="number" class="form-control col" id="p_slife"
+                                                                name="p_slife" placeholder="Shelf Life"
+                                                                required="required"
+                                                                data-validation-required-message="Please enter a Shelf Life" />
+                                                            <select name="" id="" class="col-2">
+                                                                <option value="Days">Days</option>
+                                                                <option value="Month">Month</option>
+                                                                <option value="Year">Year</option>
+                                                            </select>
+                                                            </div>
+                                                            <p class="help-block text-danger"></p>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
 
 
                                                 <div class="control-group">
-                                                    <label>Organic/Inorganic:</label><br>
-                                                    <div class="form-check form-check-inline">
-                                                        <input class="form-check-input" type="checkbox"
-                                                            id="organicCheckbox" name="organic_inorganic[]"
-                                                            value="Organic">
-                                                        <label class="form-check-label"
-                                                            for="organicCheckbox">Organic</label>
-                                                    </div>
-                                                    <div class="form-check form-check-inline">
-                                                        <input class="form-check-input" type="checkbox"
-                                                            id="inorganicCheckbox" name="organic_inorganic[]"
-                                                            value="Inorganic">
-                                                        <label class="form-check-label"
-                                                            for="inorganicCheckbox">Inorganic</label>
-                                                    </div>
-                                                    <div class="form-row row">
-
-                                                        <div class="col-sm-12 col-md">
-                                                            <div class="control-group">
-                                                                <input type="date" class="form-control"
-                                                                    id="date_of_supply" name="date_of_supply"
-                                                                    placeholder="Date of Supply" />
-                                                                <p class="help-block text-danger"></p>
+                                                    <div class="row">
+                                                        <div class="form-group">
+                                                            <label for="inputAddress2"> Upload Image</label>
+                                                            <div class="input-group mb-3">
+                                                                <div class="input-group-prepend">
+                                                                    <span class="input-group-text">Upload</span>
+                                                                </div>
+                                                                <div class="custom-file">
+                                                                    <input type="file" class="custom-file-input"
+                                                                        id="image" name="image">
+                                                                    <label class="custom-file-label">Choose
+                                                                        file</label>
+                                                                </div>
                                                             </div>
-                                                        </div>
 
-                                                        <div class="col-sm-12 col-md">
-                                                            <div class="control-group">
-                                                                <input type="date" class="form-control"
-                                                                    id="date_of_harvest" name="date_of_harvest"
-                                                                    placeholder="Date of Harvest" />
-                                                                <p class="help-block text-danger"></p>
-                                                            </div>
+
+
+
                                                         </div>
 
                                                     </div>
+                                                    <p class="help-block text-danger"></p>
+                                                </div>
 
-
-                                                    <div class="control-group">
-                                                        <div class="row">
-                                                            <label for="image" class="col-1">Image:</label>
-                                                            <div class="input-group col">
-                                                                <input type="text" class="form-control file-upload-info"
-                                                                    placeholder="Upload File">
-                                                                <span class="input-group-append">
-                                                                    <button class="file-upload-browse btn btn-primary"
-                                                                        type="button">Upload</button>
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                        <p class="help-block text-danger"></p>
-                                                    </div>
-
-                                                    <div>
-                                                        <button class="btn py-3 px-5"
-                                                            style="background-color:#46c6ce; color:white;" type="reset"
-                                                            id="sendMessageButton">Reset</button>
-                                                        <button class="btn btn-primary py-3 px-5" type="submit"
-                                                            id="sendMessageButton">Submit</button>
-                                                    </div>
+                                                <div>
+                                                    <button class="btn py-3 px-5"
+                                                        style="background-color:#46c6ce; color:white;" type="reset"
+                                                        id="sendMessageButton">Reset</button>
+                                                    <button class="btn btn-primary py-3 px-5" type="submit"
+                                                        id="sendMessageButton">Submit</button>
+                                                </div>
                                             </form>
                                         </div>
                                     </div>

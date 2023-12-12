@@ -22,15 +22,26 @@
                 </tr>
               </thead>
               <tbody>
-        
-                  <tr>
-                
-                    <td>1</td>
-                    <td>sam</td>
-                    <td>3245689</td>
-                    <td>sam@gmail.com</td>
-                    <td>sam, sam house, kakanad</td>
-                    <td style="padding: 0px;"> <div style="display: flex; gap: 5px;">
+              <?php $count = 1;
+                    foreach ($sqldata1 as $row) { ?>
+                      <tr>
+
+                        <td>
+                          <?php echo $count; ?>
+                        </td>
+                        <td>
+                          <?php echo $row->b_name; ?>
+                        </td>
+                        <td>
+                          <?php echo $row->b_number; ?>
+                        </td>
+                        <td>
+                          <?php echo $row->b_email; ?>
+                        </td>
+                        <td>
+                          <?php echo $row->b_taluk . $row->b_city . $row->b_state ?>
+                        </td>
+                        <td style="padding: 0px;"> <div style="display: flex; gap: 5px;">
                   <form action="<?php echo base_url(); ?>index.php/Admin_editBuyer" method="GET">
                 <input type="hidden" name="id">
                 <button class="btn btn-block btn-sm btn-gradient-primary mt-4 mx-auto" type="submit" style="width:auto;margin-bottom:22px" ><a href="fetchAuc.php? id='.$id.'"><i class="fa fa-solid fa-pen"></i></a> </button>
@@ -41,6 +52,8 @@
                 </form></div>
               </td>
              </tr>
+             <?php $count++; 
+                    } ?>
               </tbody>
             </table>
           </div>

@@ -15,9 +15,9 @@
                 <tr>
                   <th>Sl.no</th>
                   <th>Product Name</th>
-                  <th>Product type</th>
-                  <th>Quantity</th>
-                  <th>Price</th>
+                  <th>Product Category</th>
+                  <th>Organic/Inorganic</th>
+                  <th>Shelf Life</th>
 <th>action</th>
                 </tr>
               </thead>
@@ -28,18 +28,18 @@
                     <td>1</td>
                     <td>Apple</td>
                     <td>Fruit</td>
-                    <td>1Ton</td>
+                    <td>org</td>
                     <td>5000</td>
                     <td> <div class="d-flex ">
                     <div class="me-1">
                   <form action="<?php echo base_url(); ?>index.php/Admin_editProduct" method="GET">
                 <input type="hidden" name="id">
-                <button class="btn btn-block btn-sm btn-gradient-primary mt-4 mx-auto" type="submit" style="width:auto;margin-bottom:22px" ><a href="fetchAuc.php? id='.$id.'"><i class="fa fa-solid fa-pen"></i></a> </button>
+                <button class="btn btn-block btn-sm btn-gradient-primary  mx-auto" type="submit" style="width:auto;margin-bottom:22px" ><a href="fetchAuc.php? id='.$id.'"><i class="fa fa-solid fa-pen"></i></a> </button>
                 </form>
                     </div> <div class="me-1">
                 <form action="" method="POST">
                 <input type="hidden" name="id" >
-                <button class="btn btn-block btn-sm btn-gradient-danger mt-4 mx-auto" type="submit" ><a href="deleteAuc.php? id='.$id.'"><i class="fa fa-solid fa-trash"></i></a> </button>
+                <button class="btn btn-block btn-sm btn-gradient-danger mx-auto" type="submit" ><a href="deleteAuc.php? id='.$id.'"><i class="fa fa-solid fa-trash"></i></a> </button>
                 </form></div></div>
               </td>
                   </tr>

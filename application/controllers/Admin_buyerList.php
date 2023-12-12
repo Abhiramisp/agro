@@ -21,7 +21,14 @@ class Admin_buyerList extends CI_Controller {
 	public function index()
 	{
 
-		$this->load->view('admin/header');
+		
+		$this->load->model('Agro_model');
+		$this->load->library('session');
+
+		$query = $this->Agro_model->getdatafromtable('buyer');
+		$data['sqldata1'] = $query;
+
+		$this->load->view('admin/header',$data);
 		$this->load->view('admin/nav_bar');
 		$this->load->view('admin/buyer_list');
 		$this->load->view('admin/footer');

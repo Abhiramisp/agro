@@ -1,7 +1,8 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Admin_farmerList extends CI_Controller {
+class Admin_farmerList extends CI_Controller
+{
 
 	/**
 	 * Index Page for this controller.
@@ -21,9 +22,17 @@ class Admin_farmerList extends CI_Controller {
 	public function index()
 	{
 
-		$this->load->view('admin/header');
+
+		$this->load->model('Agro_model');
+		$this->load->library('session');
+
+		$query = $this->Agro_model->getdatafromtable('sellers');
+		$data['sqldata1'] = $query;
+
+		$this->load->view('admin/header', $data);
 		$this->load->view('admin/nav_bar');
 		$this->load->view('admin/farmer_list');
 		$this->load->view('admin/footer');
 	}
 }
+

@@ -22,14 +22,25 @@
                 </tr>
               </thead>
               <tbody>
-        
-                  <tr>
-                
-                    <td>1</td>
-                    <td>sam</td>
-                    <td>3245689</td>
-                    <td>sam@gmail.com</td>
-                    <td>sam, sam house, kakanad</td>
+              <?php $count = 1;
+                    foreach ($sqldata1 as $row) { ?>
+                      <tr>
+
+                        <td>
+                          <?php echo $count; ?>
+                        </td>
+                        <td>
+                          <?php echo $row->freelancer_name; ?>
+                        </td>
+                        <td>
+                          <?php echo $row->freelancer_number; ?>
+                        </td>
+                        <td>
+                          <?php echo $row->freelancer_mail; ?>
+                        </td>
+                        <td>
+                          <?php echo $row->freelancer_taluk . $row->freelancer_city . $row->freelancer_state ?>
+                        </td>
                     <td style="padding: 0px;"> <div style="display: flex; gap: 5px;">
                   <form action="<?php echo base_url(); ?>index.php/Admin_editFreelancer" method="GET">
                 <input type="hidden" name="id">
@@ -41,6 +52,8 @@
                 </form></div>
               </td>
                   </tr>
+                  <?php $count++; 
+                    } ?>
               </tbody>
             </table>
           </div>

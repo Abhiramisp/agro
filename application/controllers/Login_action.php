@@ -40,7 +40,7 @@ class Login_action extends CI_Controller {
 				$colname2 = "t_password";
 				
 			}else{
-				$table = "buyerregisteration";
+				$table = "buyer";
 				$colname = "b_number";
 				$colname2 = "b_password";
 				
@@ -53,29 +53,29 @@ class Login_action extends CI_Controller {
 			$this->load->model('Agro_model');
 			$productid= $this->uri->segment(3);
 			  if($this->Agro_model->check($table, $check_db)){
-				  if($table == "farmer"){
+				  if($table == "sellers"){
 					  $newdata = array('username'=>$user,'auth'=>'FARMER','logged_in' => TRUE);
 						$this->session->set_userdata($newdata);
-					  header('location: '.base_url().'index.php/Farmer_Register');
+					  header('location: '.base_url().'index.php/Farmer_homePage');
 					  die;
 				 
 				  }else if($table == "freelancer"){
-					  $newdata = array('username'=>$user,'auth'=>'AGENT','logged_in' => TRUE);
+					  $newdata = array('username'=>$user,'auth'=>'FREELANCER','logged_in' => TRUE);
 						$this->session->set_userdata($newdata);
-					  header('location: '.base_url().'index.php/Freelancer_Register');
+					  header('location: '.base_url().'index.php/Freelancer_homePage');
 					  die;
 					  
-					 }else if($table == "tranport"){
+					 }else if($table == "transport"){
 					  $newdata = array('username'=>$user,'auth'=>'TRANSPORT','logged_in' => TRUE);
 						$this->session->set_userdata($newdata);
-					  header('location: '.base_url().'index.php/Transport_Register');
+					  header('location: '.base_url().'index.php/Transpoter_homePage');
 					  die; 
 					  
 					  
 				  }else if($table == "buyer"){
 					  $newdata = array('username'=>$user,'auth'=>'BUYER','logged_in' => TRUE);
 						$this->session->set_userdata($newdata);
-					 header('location: '.base_url().'index.php/Buyer_Register');
+					 header('location: '.base_url().'index.php/Buyer_homePage');
 					 die; 
 				  }
 			  }else{

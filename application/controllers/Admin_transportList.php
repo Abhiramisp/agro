@@ -20,8 +20,13 @@ class Admin_transportList extends CI_Controller {
 	 */
 	public function index()
 	{
+		$this->load->model('Agro_model');
+		$this->load->library('session');
 
-		$this->load->view('admin/header');
+		$query = $this->Agro_model->getdatafromtable('transport');
+		$data['sqldata1'] = $query;
+
+		$this->load->view('admin/header', $data);
 		$this->load->view('admin/nav_bar');
 		$this->load->view('admin/transport_list');
 		$this->load->view('admin/footer');
