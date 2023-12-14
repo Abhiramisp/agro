@@ -20,7 +20,17 @@ class Freelancer_homePage extends CI_Controller {
 	 */
 	public function index()
 	{
-        $this->load->view('header');
+		$this->load->model('Agro_model');
+		$this->load->library('session');
+		$seller_id = urldecode($this->uri->segment(3));
+	
+		
+		$active = array('seller_id'=>$seller_id);
+
+		$query = $this->Agro_model->getdatafromtable('sellers',$active);
+		$data['sqldata1'] = $query;
+
+        $this->load->view('header',$data);
 		$this->load->view("freelancer/nav");
 		$this->load->view('freelancer/home_page');
 		$this->load->view('freelancer/logoutModel');

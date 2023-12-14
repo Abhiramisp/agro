@@ -22,7 +22,7 @@ class Admin_assignFreelancer extends CI_Controller {
 	{
 		$this->load->view('admin/header');
 		$this->load->view('admin/nav_bar');
-		$this->load->view('admin/assign_page');
+		$this->load->view('admin/freelancer_assign_page');
 		$this->load->view('admin/footer');
 	}
 }

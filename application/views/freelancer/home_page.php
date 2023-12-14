@@ -21,26 +21,40 @@
                 </tr>
               </thead>
               <tbody>
-        
-                  <tr>
-                
-                    <td>1</td>
-                    <td>sam</td>
-                    <td>3245689</td>
-                    <td>sam@gmail.com</td>
-                    <td>sam, sam house, kakanad</td>
-                    <td style="padding: 0px;"> <div style="display: flex; gap: 5px;">
-                  <form action="<?php echo base_url(); ?>index.php/Admin_editFarmer" method="GET">
-                <input type="hidden" name="id">
-                <button class="btn btn-block btn-sm btn-gradient-primary mt-4 mx-auto" type="submit" style="width:auto;margin-bottom:22px" ><a href="fetchAuc.php? id='.$id.'"><i class="fa fa-solid fa-pen"></i></a> </button>
-                </form>
-                <form action="" method="POST">
-                <input type="hidden" name="id" >
-                <button class="btn btn-block btn-sm btn-gradient-danger mt-4 mx-auto" type="submit" ><a href="deleteAuc.php? id='.$id.'"><i class="fa fa-solid fa-trash"></i></a> </button>
-                </form></div>
-              </td>
-                  </tr>
-              </tbody>
+                    <?php $count = 1;
+                    foreach ($sqldata1 as $row) { ?>
+                      <tr>
+
+                        <td>
+                          <?php echo $count; ?>
+                        </td>
+                        <td>
+                          <?php echo $row->seller_name; ?>
+                        </td>
+                        <td>
+                          <?php echo $row->seller_number; ?>
+                        </td>
+                        <td>
+                          <?php echo $row->seller_email; ?>
+                        </td>
+                        <td>
+                          <?php echo $row->seller_taluk . $row->seller_city . $row->seller_state ?>
+                        </td>
+                        <td>
+
+                        <a style="margin:2px"
+                            href="<?php echo base_url() . "index.php/Admin_editFarmer/index/" . urldecode($row->seller_id); ?>"><span
+                              style="color:blue"><i class="fa fa-edit" aria-hidden="true"></i></span></a>
+
+                          <a style="margin:2px"
+                            href="<?php echo base_url() . "index.php/Admin_farmerList/delete_seller/" . urldecode($row->seller_id); ?>"><span
+                              style="color:red"><i class="fa fa-trash" aria-hidden="true"></i></span></a>
+
+                        </td>
+                      </tr>
+                      <?php $count++;
+                    } ?>
+                  </tbody>
             </table>
           </div>
         </div>

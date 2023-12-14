@@ -20,10 +20,33 @@ class Farmer_loanApplication extends CI_Controller {
 	 */
 	public function index()
 	{
-        $this->load->view('header');
+
+		$this->load->model('Agro_model');
+		$this->load->library('session');
+		
+	
+		if(!$this->session->has_userdata('username')|| $this->session->userdata('auth') != "FARMER"){
+			$datainserr = "Invalid Login Session";
+			header('location: '.base_url().'login/index_error/'.$datainserr);
+			die;
+			}else{
+		$this->load->model('Agro_model');
+		
+		$sess = array('sessi'=>$this->session->userdata('username'));
+		
+		$active = array('seller_number'=>$sess['sessi']);
+		
+           $query = $this->Agro_model->getdatafromtable('sellers', $active);
+	       $data['sqldata1']= $query;
+		   $sess = array('sessi'=>$this->session->userdata('username')); 
+		
+		
+		
+        $this->load->view('header',$sess);
 		$this->load->view("farmers/nav");
-		$this->load->view('farmers/loan_application');
+		$this->load->view('farmers/loan_application',$data);
 		$this->load->view('farmers/logoutModel');
 		$this->load->view('footer');
 	}
+}
 }

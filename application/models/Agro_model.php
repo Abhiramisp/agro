@@ -29,4 +29,18 @@ class Agro_model extends CI_Model
 		$query = $this->db->get_where($table);
 		return $query->result();
 	}
+    public function getdatafromtable2($table,$data)
+	{
+		$query = $this->db->get_where($table,$data);
+		return $query->result();
+	}
+    public function delete_data($table, $where) {
+        $this->db->where($where);
+        $this->db->delete($table);
+    }
+
+    public function update_data($table, $data, $id_column, $id_value) {
+        $this->db->where($id_column, $id_value);
+        $this->db->update($table, $data);
+    }
 }

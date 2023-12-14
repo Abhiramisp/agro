@@ -2,7 +2,7 @@
     <main>
         <div class="container py-5 ">
             <header class="text-center">
-                <h1> Transaction History</h1>
+                <h1>Pending Transaction</h1>
             </header>
             <div class="row py-5 align-items-center justify-content-center">
                 <div class="col-lg-10 mx-auto">

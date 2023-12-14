@@ -20,8 +20,22 @@ class Admin_editTransport extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('admin/header');
-		$this->load->view('admin/nav_bar');
+		$this->load->model('Agro_model');
+		$this->load->library('session');
+		$id = urldecode($this->uri->segment(3));
+		
+  
+		 //$query = $this->Agro_model->getdatafromtable('sellers',);
+		 $comp = array('id'=>$id);
+		 $query = $this->Agro_model->getdatafromtable2('transport', $comp);
+		 $data['sqldata1']= $query;
+
+		 $query2 = $this->Agro_model->getdatafromtable('bank_detials');
+		 $data2['sqldata2']= $query2;
+
+
+		$this->load->view('admin/header',$data);
+		$this->load->view('admin/nav_bar',$data2);
 		$this->load->view('admin/transport_edit_detials');
 		$this->load->view('admin/footer');
 	}

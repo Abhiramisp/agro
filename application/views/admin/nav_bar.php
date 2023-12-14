@@ -35,7 +35,7 @@
             <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
                 <div class="sb-sidenav-menu">
                     <div class="nav">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="<?php echo base_url(); ?>index.php/admin">
                             <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                             Home
                         </a>
@@ -53,6 +53,8 @@
                                     details</a>
                                 <a class="nav-link" href="<?php echo base_url(); ?>index.php/Admin_addFarmer">Add
                                     details</a>
+                                <a class="nav-link"
+                                    href="<?php echo base_url(); ?>index.php/Admin_assignFarmer">Assign Task</a>
                             </nav>
                         </div>
                         <!-- buyers -->
@@ -114,11 +116,13 @@
                             Transaction
                             <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                         </a>
-                        <div class="collapse" id="collLayout" aria-labelledby="headingOne"
+                        <div class="collapse" id="collLayout" aria-labelledby="headingOne"Admin_transactionAmountPending
                             data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav">
                                 <a class="nav-link" href="Admin_transactionHistory">Transaction Detials</a>
-                                <a class="nav-link" href="Admin_transactionAmount">Transaction Amount</a>
+                                <a class="nav-link" href="Admin_transactionPending">Pending Transaction</a>
+                                <a class="nav-link" href="Admin_transactionComplete">Complete Transaction</a>
+                                <a class="nav-link" href="Admin_amountTransaction">Transaction Amount</a>
                             </nav>
                         </div>
                         <!-- Product -->
@@ -139,23 +143,25 @@
                         </div>
 
                         <!-- Loan -->
-                        <a class="nav-link collapsed" href=""data-bs-toggle="collapse" data-bs-target="#loan" aria-expanded="false" aria-controls="collapseLayouts">
+                        <a class="nav-link collapsed" href="" data-bs-toggle="collapse" data-bs-target="#loan"
+                            aria-expanded="false" aria-controls="collapseLayouts">
                             <div class="sb-nav-link-icon"><i class="fa-solid fa-sack-dollar"></i></div>
                             Loan
                             <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
 
                         </a>
-                        <div class="collapse" id="loan" aria-labelledby="headingOne"
-                            data-bs-parent="#sidenavAccordion">
+                        <div class="collapse" id="loan" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav">
-                                <a class="nav-link" href="<?php echo base_url(); ?>index.php/Admin_viewLoanrequest">Loan Request</a>
-                                <a class="nav-link" href="<?php echo base_url(); ?>index.php/Admin_viewApprovedloan">Approved Loan</a>
+                                <a class="nav-link" href="<?php echo base_url(); ?>index.php/Admin_viewLoanrequest">Loan
+                                    Request</a>
+                                <a class="nav-link"
+                                    href="<?php echo base_url(); ?>index.php/Admin_viewApprovedloan">Approved Loan</a>
                             </nav>
                         </div>
 
                         <!-- sales detials -->
-                        <a class="nav-link collapsed" href="Admin_salesReport"
-                            aria-expanded="false" aria-controls="collapseLayouts">
+                        <a class="nav-link collapsed" href="Admin_salesReport" aria-expanded="false"
+                            aria-controls="collapseLayouts">
                             <div class="sb-nav-link-icon"><i class="fa-solid fa-file"></i></div>
                             Sales Detials
                         </a>

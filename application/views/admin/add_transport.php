@@ -46,13 +46,6 @@
                                                 </div>
                                             </div>
                                         </div>
-
-                                        <div class="control-group">
-                                            <textarea class="form-control" rows="3" id="faddress" name="faddress"
-                                                placeholder="Address" required="required"
-                                                data-validation-required-message="Please enter your Address"></textarea>
-                                            <p class="help-block text-danger"></p>
-                                        </div>
                                         <div class="form-row row">
 
                                             <div class="col-sm-12 col-md-6 col-lg">

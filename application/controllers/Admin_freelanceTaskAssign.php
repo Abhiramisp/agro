@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Admin_assignTransport extends CI_Controller {
+class Admin_freelanceTaskAssign extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -22,7 +22,7 @@ class Admin_assignTransport extends CI_Controller {
 	{
 		$this->load->view('admin/header');
 		$this->load->view('admin/nav_bar');
-		$this->load->view('admin/transport_assign_page');
+		$this->load->view('admin/freelancer_assign_task');
 		$this->load->view('admin/footer');
 	}
 }

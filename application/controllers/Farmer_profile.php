@@ -20,7 +20,18 @@ class Farmer_profile extends CI_Controller {
 	 */
 	public function index()
 	{
-        $this->load->view('header');
+			
+		$this->load->model('Agro_model');
+		$this->load->library('session');
+	  
+  
+		 $query = $this->Agro_model->getdatafromtable('sellers',);
+		 $data['sqldata1']= $query;
+
+		 $query2 = $this->Agro_model->getdatafromtable('bank_detials',);
+		 $data2['sqldata1']= $query2;
+	  
+        $this->load->view('header', $data, $data2);
 		$this->load->view("farmers/nav");
 		$this->load->view('farmers/profile');
 		$this->load->view('farmers/logoutModel');

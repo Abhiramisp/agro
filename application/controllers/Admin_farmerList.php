@@ -25,8 +25,12 @@ class Admin_farmerList extends CI_Controller
 
 		$this->load->model('Agro_model');
 		$this->load->library('session');
+		$seller_id = urldecode($this->uri->segment(3));
+	
+		
+		$active = array('seller_id'=>$seller_id);
 
-		$query = $this->Agro_model->getdatafromtable('sellers');
+		$query = $this->Agro_model->getdatafromtable('sellers',$active);
 		$data['sqldata1'] = $query;
 
 		$this->load->view('admin/header', $data);
@@ -34,5 +38,23 @@ class Admin_farmerList extends CI_Controller
 		$this->load->view('admin/farmer_list');
 		$this->load->view('admin/footer');
 	}
+
+
+	public function delete_seller(){
+	
+		$seller_id = urldecode($this->uri->segment(3));
+		
+		$this->load->model('Agro_model');
+			
+			$active = array('seller_id'=>$seller_id);
+			
+			$this->Agro_model->delete_data('sellers', $active);
+			
+			$this->load->helper('url');
+			$this->load->library('session');
+			
+			header('location: '.base_url().'index.php/Admin_farmerList/index/');
+		
+	}	
 }
 

@@ -35,7 +35,7 @@
                                                         <input type="hidden" name="id">
                                                         <button
                                                             class="btn btn-block btn-sm border-success  mx-auto"
-                                                            type="submit"><a href="Admin_transactionReport" class="abc">View
+                                                            type="submit"><a href="Admin_transactionAmount" class="abc">View
                                                                 Detials</a> </button>
                                                     </form>
                                                 </div>

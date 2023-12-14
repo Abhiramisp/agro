@@ -32,7 +32,7 @@
                 </button>
                 <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
                     <div class="navbar-nav mx-auto">
-                        <a href="<?php echo base_url(); ?>index.php/Farmer_homePage"
+                        <a href="<?php echo base_url(); ?>index.php/Freelancer_homePage"
                             class="nav-item nav-link active">Home</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Assigments</a>
