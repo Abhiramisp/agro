@@ -151,12 +151,12 @@
                                                         <button class="btn btn-primary py-3 px-5" type="submit"
                                                             id="sendMessageButton">Submit</button>
                                                     </div>
-                                                    <!-- <div class="col">
+                                                    <div class="col">
                                                         <button class="btn btn-primary py-3 px-5" type="button"
                                                             id="approveButton">Approve</button>
                                                         <button class="btn btn-danger py-3 px-5" type="button"
                                                             id="rejectButton" style="display: none;">Reject</button>
-                                                    </div> -->
+                                                    </div>
                                                 </div>
                                             </form>
                                         </div>

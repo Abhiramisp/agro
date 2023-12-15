@@ -15,10 +15,9 @@
                                         <tr>
                                             <th>Sl.no</th>
                                             <th>Farmer Name</th>
-                                            <th>Farmer number</th>
                                             <th>Product name</th>
                                             <th>Quantity</th>
-                                            <th>Location</th>
+                                            <th>Date</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -27,10 +26,9 @@
 
                                             <td>1</td>
                                             <td>same</td>
-                                            <td>4878798</td>
                                             <td>Apple</td>
                                             <td>1Ton</td>
-                                            <td>5000</td>
+                                            <td>4878798</td>
                                             
                                         </tr>
                                     </tbody>

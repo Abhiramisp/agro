@@ -22,7 +22,7 @@
                                         <i class="fas fa-star"></i>
                                     </div>
                                     <h4 class="mb-3">3.12 $</h4>
-                                    <a href="Buyer_searchPage" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> View Product</a>
+                                    <a href="Buyer_requerment" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> View Product</a>
                                 </div>
                             </div>
                         </div>
@@ -43,7 +43,7 @@
                                         <i class="fas fa-star"></i>
                                     </div>
                                     <h4 class="mb-3">3.12 $</h4>
-                                    <a href="Buyer_searchPage" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> View Product</a>
+                                    <a href="Buyer_requerment" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> View Product</a>
                                 </div>
                             </div>
                         </div>
@@ -64,7 +64,7 @@
                                         <i class="fas fa-star"></i>
                                     </div>
                                     <h4 class="mb-3">3.12 $</h4>
-                                    <a href="Buyer_searchPage" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> View Product</a>
+                                    <a href="Buyer_requerment" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> View Product</a>
                                 </div>
                             </div>
                         </div>
@@ -85,7 +85,7 @@
                                         <i class="fas fa-star"></i>
                                     </div>
                                     <h4 class="mb-3">3.12 $</h4>
-                                    <a href="Buyer_searchPage" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> View Product</a>
+                                    <a href="Buyer_requerment" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> View Product</a>
                                 </div>
                             </div>
                         </div>
@@ -106,7 +106,7 @@
                                         <i class="fas fa-star"></i>
                                     </div>
                                     <h4 class="mb-3">3.12 $</h4>
-                                    <a href="Buyer_searchPage" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> View Product</a>
+                                    <a href="Buyer_requerment" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> View Product</a>
                                 </div>
                             </div>
                         </div>
@@ -127,7 +127,7 @@
                                         <i class="fas fa-star"></i>
                                     </div>
                                     <h4 class="mb-3">3.12 $</h4>
-                                    <a href="Buyer_searchPage" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> View Product</a>
+                                    <a href="Buyer_requerment" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> View Product</a>
                                 </div>
                             </div>
                         </div>
@@ -145,7 +145,7 @@
                                     <i class="fas fa-star"></i>
                                 </div>
                                 <h4 class="mb-3">3.12 $</h4>
-                                <a href="Buyer_searchPage" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> View Product</a>
+                                <a href="Buyer_requerment" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> View Product</a>
                             </div>
                         </div>
                     </div>
@@ -162,7 +162,7 @@
                                     <i class="fas fa-star"></i>
                                 </div>
                                 <h4 class="mb-3">3.12 $</h4>
-                                <a href="Buyer_searchPage" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> View Product</a>
+                                <a href="Buyer_requerment" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> View Product</a>
                             </div>
                         </div>
                     </div>
@@ -179,7 +179,7 @@
                                     <i class="fas fa-star"></i>
                                 </div>
                                 <h4 class="mb-3">3.12 $</h4>
-                                <a href="Buyer_searchPage" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> View Product</a>
+                                <a href="Buyer_requerment" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> View Product</a>
                             </div>
                         </div>
                     </div>
@@ -196,7 +196,7 @@
                                     <i class="fas fa-star"></i>
                                 </div>
                                 <h4 class="mb-3">3.12 $</h4>
-                                <a href="Buyer_searchPage" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> View Product</a>
+                                <a href="Buyer_requerment" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> View Product</a>
                             </div>
                         </div>
                     </div>

@@ -6,7 +6,7 @@
 
             </header>
             <div class="row py-5 align-items-center justify-content-center">
-                <div class="col-lg-10 mx-auto">
+                <div class="col-lg mx-auto">
                     <div class="card rounded shadow border-0">
                         <div class="card-body p-5 bg-white rounded">
                             <div class="table-responsive ">
@@ -19,6 +19,7 @@
                                             <th>Product name</th>
                                             <th>Quantity</th>
                                             <th>Location</th>
+                                            <th>Date</th>
                                             <th>action</th>
                                         </tr>
                                     </thead>
@@ -30,23 +31,29 @@
                                             <td>same</td>
                                             <td>4878798</td>
                                             <td>Apple</td>
+                                            <td></td>
                                             <td>1Ton</td>
                                             <td>5000</td>
                                             <td>
-                                                <div class="d-flex ">
-                                                    <div class="me-1">
-                                                        <form
-                                                            action=""
-                                                            method="GET">
-                                                            <input type="hidden" name="id">
-                                                            <button
-                                                                class="btn btn-block btn-sm btn-gradient-primary  mx-auto"
-                                                                type="submit" style="width:auto;margin-bottom:22px"><a
-                                                                    href="Freelancer_approveAssiged?id='.$id.'">Approve</a> </button>
-                                                        </form>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <button
+                                                            class="btn btn-block btn-sm btn-gradient-primary  mx-auto"
+                                                            type="submit" style="width:auto;margin-bottom:22px"><a
+                                                                href="Freelancer_approveAssiged?id='.$id.'">Approve</a>
+                                                        </button>
+
                                                     </div>
-                                                   
+                                                    <div class="col">
+                                                        <button
+                                                            class="btn btn-block btn-sm btn-gradient-primary  mx-auto"
+                                                            type="submit" style="width:auto;margin-bottom:22px"><a
+                                                                href="Freelancer_approveAssiged?id='.$id.'">Reject</a>
+                                                        </button>
+                                                    </div>
                                                 </div>
+
+
                                             </td>
                                         </tr>
                                     </tbody>

@@ -16,27 +16,10 @@
                                     <form action="#" method="POST" enctype="multipart/form-data">
 
                                         <div class="form-row row">
-
                                             <div class="col-md-6">
                                                 <div class="control-group">
                                                     <input type="text" class="form-control" id="" name=""
-                                                        placeholder="Farmer Name" 
-                                                        data-validation-required-message="Please enter Farmer Name" />
-                                                    <p class="help-block text-danger"></p>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="control-group">
-                                                    <input type="email" class="form-control" id="" name=""
-                                                        placeholder="Farmer number" rows="3" 
-                                                        data-validation-required-message="Please enter Farmer number">
-                                                    <p class="help-block text-danger"></p>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="control-group">
-                                                    <input type="text" class="form-control" id="" name=""
-                                                        placeholder="Buyer Name" 
+                                                        placeholder="Buyer Name"
                                                         data-validation-required-message="Please enter Buyer Name" />
                                                     <p class="help-block text-danger"></p>
                                                 </div>
@@ -44,7 +27,7 @@
                                             <div class="col-md-6">
                                                 <div class="control-group">
                                                     <input type="email" class="form-control" id="" name=""
-                                                        placeholder="Buyer number" rows="3" 
+                                                        placeholder="Buyer number" rows="3"
                                                         data-validation-required-message="Please enter Buyer number">
                                                     <p class="help-block text-danger"></p>
                                                 </div>
@@ -52,7 +35,7 @@
                                             <div class="col-md-6">
                                                 <div class="control-group">
                                                     <input type="text" class="form-control" id="" name=""
-                                                        placeholder="Product Name" 
+                                                        placeholder="Product Name"
                                                         data-validation-required-message="Please enter Product Name" />
                                                     <p class="help-block text-danger"></p>
                                                 </div>
@@ -60,7 +43,7 @@
                                             <div class="col-md-6">
                                                 <div class="control-group">
                                                     <input type="email" class="form-control" id="" name=""
-                                                        placeholder="Quantity" rows="3" 
+                                                        placeholder="Quantity" rows="3"
                                                         data-validation-required-message="Please enter Quantity">
                                                     <p class="help-block text-danger"></p>
                                                 </div>
@@ -68,7 +51,7 @@
                                             <div class="col-md-6">
                                                 <div class="control-group">
                                                     <input type="text" class="form-control" id="" name=""
-                                                        placeholder="Pickup Point" 
+                                                        placeholder="Pickup Point"
                                                         data-validation-required-message="Please enter Pickup Point" />
                                                     <p class="help-block text-danger"></p>
                                                 </div>
@@ -76,12 +59,19 @@
                                             <div class="col-md-6">
                                                 <div class="control-group">
                                                     <input type="email" class="form-control" id="" name=""
-                                                        placeholder="Delivering Point" rows="3" 
+                                                        placeholder="Delivering Point" rows="3"
                                                         data-validation-required-message="Please enter Delivering Point">
                                                     <p class="help-block text-danger"></p>
                                                 </div>
                                             </div>
-
+                                            <div class="col-md">
+                                                <div class="control-group">
+                                                    <input type="email" class="form-control" id="" name=""
+                                                        placeholder="OTP" rows="3"
+                                                        data-validation-required-message="Please enter OTP">
+                                                    <p class="help-block text-danger"></p>
+                                                </div>
+                                            </div>
                                         </div>
 
 

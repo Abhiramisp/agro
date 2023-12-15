@@ -15,7 +15,7 @@
                                         <tr>
                                             <th>Sl.no</th>
                                             <th>Farmer Name</th>
-                                            <th>Farmer number</th>
+                                            <th>Freelancer Name</th>
                                             <th>Buyer Name</th>
                                             <th>Buyer number</th>
                                             <th>Product name</th>
@@ -31,7 +31,7 @@
 
                                             <td>1</td>
                                             <td>same</td>
-                                            <td>4878798</td>
+                                            <td>freelancer name</td>
                                             <td>saaam</td>
                                             <td>778798</td>
                                             <td>Apple</td>
@@ -39,21 +39,27 @@
                                             <td>location</td>
                                             <td>location</td>
                                             <td>
-                                                <div class="d-flex ">
-                                                    <div class="me-1">
-                                                        <form
-                                                            action=""
-                                                            method="GET">
-                                                            <input type="hidden" name="id">
-                                                            <button
-                                                                class="btn btn-block btn-sm btn-gradient-primary  mx-auto"
-                                                                type="submit" style="width:auto;margin-bottom:22px"><a
-                                                                    href="Transport_verifycompleted?id='.$id.'">Complete</a> </button>
-                                                        </form>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <button
+                                                            class="btn btn-block btn-sm btn-gradient-primary  mx-auto"
+                                                            type="submit" style="width:auto;margin-bottom:22px"><a
+                                                                href="Transport_verifycompleted?id='.$id.'">Complete</a>
+                                                        </button>
+
                                                     </div>
-                                                   
+                                                    <div class="col">
+                                                        <button
+                                                            class="btn btn-block btn-sm   mx-auto"
+                                                            type="submit" style="width:auto;margin-bottom:22px"><a
+                                                                href="Freelancer_approveAssiged?id='.$id.'">Reject</a>
+                                                        </button>
+                                                    </div>
                                                 </div>
+
+
                                             </td>
+
                                         </tr>
                                     </tbody>
                                 </table>

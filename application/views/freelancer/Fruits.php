@@ -43,7 +43,7 @@
                                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
                                                     <div class="d-flex justify-content-between flex-lg-wrap">
                                                         <p class="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
-                                                        <a href="Buyer_searchPage" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> View Product</a>
+                                                        <a href="Buyer_requerment" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> View Product</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -59,7 +59,7 @@
                                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
                                                     <div class="d-flex justify-content-between flex-lg-wrap">
                                                         <p class="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
-                                                        <a href="Buyer_searchPage" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> View Product</a>
+                                                        <a href="Buyer_requerment" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> View Product</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -75,7 +75,7 @@
                                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
                                                     <div class="d-flex justify-content-between flex-lg-wrap">
                                                         <p class="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
-                                                        <a href="Buyer_searchPage" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> View Product</a>
+                                                        <a href="Buyer_requerment" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> View Product</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -91,7 +91,7 @@
                                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
                                                     <div class="d-flex justify-content-between flex-lg-wrap">
                                                         <p class="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
-                                                        <a href="Buyer_searchPage" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> View Product</a>
+                                                        <a href="Buyer_requerment" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> View Product</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -107,7 +107,7 @@
                                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
                                                     <div class="d-flex justify-content-between flex-lg-wrap">
                                                         <p class="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
-                                                        <a href="Buyer_searchPage" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> View Product</a>
+                                                        <a href="Buyer_requerment" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> View Product</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -123,7 +123,7 @@
                                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
                                                     <div class="d-flex justify-content-between flex-lg-wrap">
                                                         <p class="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
-                                                        <a href="Buyer_searchPage" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> View Product</a>
+                                                        <a href="Buyer_requerment" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> View Product</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -139,7 +139,7 @@
                                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
                                                     <div class="d-flex justify-content-between flex-lg-wrap">
                                                         <p class="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
-                                                        <a href="Buyer_searchPage" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> View Product</a>
+                                                        <a href="Buyer_requerment" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> View Product</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -155,7 +155,7 @@
                                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
                                                     <div class="d-flex justify-content-between flex-lg-wrap">
                                                         <p class="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
-                                                        <a href="Buyer_searchPage" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> View Product</a>
+                                                        <a href="Buyer_requerment" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> View Product</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -179,7 +179,7 @@
                                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
                                                     <div class="d-flex justify-content-between flex-lg-wrap">
                                                         <p class="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
-                                                        <a href="Buyer_searchPage" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> View Product</a>
+                                                        <a href="Buyer_requerment" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> View Product</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -195,7 +195,7 @@
                                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
                                                     <div class="d-flex justify-content-between flex-lg-wrap">
                                                         <p class="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
-                                                        <a href="Buyer_searchPage" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> View Product</a>
+                                                        <a href="Buyer_requerment" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> View Product</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -219,7 +219,7 @@
                                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
                                                     <div class="d-flex justify-content-between flex-lg-wrap">
                                                         <p class="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
-                                                        <a href="Buyer_searchPage" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> View Product</a>
+                                                        <a href="Buyer_requerment" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> View Product</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -235,7 +235,7 @@
                                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
                                                     <div class="d-flex justify-content-between flex-lg-wrap">
                                                         <p class="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
-                                                        <a href="Buyer_searchPage" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> View Product</a>
+                                                        <a href="Buyer_requerment" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> View Product</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -259,7 +259,7 @@
                                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
                                                     <div class="d-flex justify-content-between flex-lg-wrap">
                                                         <p class="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
-                                                        <a href="Buyer_searchPage" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> View Product</a>
+                                                        <a href="Buyer_requerment" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> View Product</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -275,7 +275,7 @@
                                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
                                                     <div class="d-flex justify-content-between flex-lg-wrap">
                                                         <p class="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
-                                                        <a href="Buyer_searchPage" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> View Product</a>
+                                                        <a href="Buyer_requerment" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> View Product</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -299,7 +299,7 @@
                                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
                                                     <div class="d-flex justify-content-between flex-lg-wrap">
                                                         <p class="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
-                                                        <a href="Buyer_searchPage" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> View Product</a>
+                                                        <a href="Buyer_requerment" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> View Product</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -315,7 +315,7 @@
                                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
                                                     <div class="d-flex justify-content-between flex-lg-wrap">
                                                         <p class="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
-                                                        <a href="Buyer_searchPage" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> View Product</a>
+                                                        <a href="Buyer_requerment" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> View Product</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -331,7 +331,7 @@
                                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
                                                     <div class="d-flex justify-content-between flex-lg-wrap">
                                                         <p class="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
-                                                        <a href="Buyer_searchPage" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> View Product</a>
+                                                        <a href="Buyer_requerment" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> View Product</a>
                                                     </div>
                                                 </div>
                                             </div>

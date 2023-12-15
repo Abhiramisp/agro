@@ -13,23 +13,31 @@
                                 <table id="example" style="width:100%" class="table table-striped table-bordered ">
                                     <thead>
                                         <tr>
-                                            
-                                            <th>Transaction Name</th>
+
                                             <th>Date and time</th>
-                                            <th>Amount</th>
-                                            
+                                            <th>Product Name</th>
+                                            <th>Product Value</th>
+                                            <th>Status</th>
+                                            <th></th>
                                         </tr>
                                     </thead>
                                     <tbody>
 
                                         <tr>
 
-                                          
-                                            <td>same</td>
+
                                             <td>4-87-87 :98</td>
-                                         
+                                            <td>same</td>
                                             <td>5000</td>
-                                            
+                                            <td>5000</td>
+                                            <td>
+                                                <div>
+
+                                                    <button class="btn btn-outline-primary" type="submit"
+                                                        id="sendMessageButton"><a href="Buyer_support">Support</a></button>
+                                                </div>
+                                            </td>
+
                                         </tr>
                                     </tbody>
                                 </table>

@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Farmer_homePage extends CI_Controller {
+class Buyer_support extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -21,20 +21,9 @@ class Farmer_homePage extends CI_Controller {
 	public function index()
 	{
         $this->load->view('header');
-		$this->load->view("farmers/nav");
-		$this->load->view('model_search');
-        $this->load->view('farmers/hero');
-        $this->load->view('farmers/star_product');
-        $this->load->view('farmers/bestsaler_product');
-        $this->load->view('Featurs1');
-        $this->load->view('farmers/Fruits');
-        $this->load->view('Featurs');
-        $this->load->view('farmers/Vesitable');
-        $this->load->view('banner');
-        $this->load->view('farmers/bestsaler_product');
-        $this->load->view('fact');
-        $this->load->view('tastimonial');
-		$this->load->view('farmers/logoutModel');
+		$this->load->view("buyers/nav");
+		$this->load->view('buyers/support');
+		$this->load->view('buyers/logoutModel');
 		$this->load->view('footer');
 	}
 }

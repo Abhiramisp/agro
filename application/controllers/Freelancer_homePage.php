@@ -32,7 +32,18 @@ class Freelancer_homePage extends CI_Controller {
 
         $this->load->view('header',$data);
 		$this->load->view("freelancer/nav");
-		$this->load->view('freelancer/home_page');
+		$this->load->view('model_search');
+        $this->load->view('freelancer/hero');
+        $this->load->view('freelancer/star_product');
+        $this->load->view('freelancer/bestsaler_product');
+        $this->load->view('Featurs1');
+        $this->load->view('freelancer/Fruits');
+        $this->load->view('Featurs');
+        $this->load->view('freelancer/Vesitable');
+        $this->load->view('banner');
+        $this->load->view('freelancer/bestsaler_product');
+        $this->load->view('fact');
+        $this->load->view('tastimonial');
 		$this->load->view('freelancer/logoutModel');
 		$this->load->view('footer');
 	}

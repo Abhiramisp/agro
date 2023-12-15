@@ -2,7 +2,7 @@
     <div class="container py-5">
         <div class="container py-5 ">
             <header class="text-center text-white">
-                <h1 class="display-4">Transaction History</h1>
+                <h1 class="display-4">Work Assiged</h1>
 
             </header>
             <div class="row py-5 align-items-center justify-content-center">
@@ -13,21 +13,23 @@
                                 <table id="example" style="width:100%" class="table table-striped table-bordered ">
                                     <thead>
                                         <tr>
-                                            
-                                            <th>Transaction Name</th>
-                                            <th>Date and time</th>
+                                            <th>Sl.no</th>
+                                            <th>Farmer Name</th>
+                                            <th>Product name</th>
+                                            <th>Quantity</th>
+                                            <th>Date</th>
                                             <th>Amount</th>
-                                            
                                         </tr>
                                     </thead>
                                     <tbody>
 
                                         <tr>
 
-                                          
+                                            <td>1</td>
                                             <td>same</td>
-                                            <td>4-87-87 :98</td>
-                                         
+                                            <td>Apple</td>
+                                            <td>1Ton</td>
+                                            <td>4878798</td>
                                             <td>5000</td>
                                             
                                         </tr>

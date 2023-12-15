@@ -22,7 +22,18 @@ class Transpoter_homePage extends CI_Controller {
 	{
         $this->load->view('header');
 		$this->load->view("transport/nav");
-		$this->load->view('transport/home_page');
+		$this->load->view('model_search');
+        $this->load->view('transport/hero');
+        $this->load->view('transport/star_product');
+        $this->load->view('transport/bestsaler_product');
+        $this->load->view('Featurs1');
+        $this->load->view('transport/Fruits');
+        $this->load->view('Featurs');
+        $this->load->view('transport/Vesitable');
+        $this->load->view('banner');
+        $this->load->view('transport/bestsaler_product');
+        $this->load->view('fact');
+        $this->load->view('tastimonial');
 		$this->load->view('transport/logoutModel');
 		$this->load->view('footer');
 	}

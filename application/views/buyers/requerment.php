@@ -17,7 +17,14 @@
                                     <form action="#" method="POST" enctype="multipart/form-data">
 
                                         <div class="form-row row">
-
+                                            <div class="">
+                                                <div class="control-group">
+                                                    <input type="text" class="form-control" id="fname" name="fname"
+                                                        placeholder="Farmer ID"
+                                                        data-validation-required-message="Please enter Farmer ID" />
+                                                    <p class="help-block text-danger"></p>
+                                                </div>
+                                            </div>
                                             <div class="">
                                                 <div class="control-group">
                                                     <input type="text" class="form-control" id="fname" name="fname"
@@ -98,54 +105,34 @@
                                         </div>
 
                                         <div class="control-group">
-
-                                            <!-- <label>Organic/Inorganic:</label><br>
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="checkbox" id="organicCheckbox"
-                                                    name="organic_inorganic[]" value="Organic">
-                                                <label class="form-check-label" for="organicCheckbox">Organic</label>
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-6">
+                                                    <div class="control-group">
+                                                        <input type="text" class="form-control" id="" name=""
+                                                            placeholder="Enetr the require Quantity" />
+                                                        <p class="help-block text-danger"></p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 col-md-6">
+                                                    <div class="control-group ">
+                                                        <meta http-equiv="Content-Type"
+                                                            content="text/html; charset=UTF-8">
+                                                        <select class="form-control bg-white" name="" id="">
+                                                            <option value="">Unit</option>
+                                                        </select>
+                                                        <p class="help-block text-danger"></p>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="checkbox" id="inorganicCheckbox"
-                                                    name="organic_inorganic[]" value="Inorganic">
-                                                <label class="form-check-label"
-                                                    for="inorganicCheckbox">Inorganic</label>
-                                            </div> -->
-
                                             <div class="col-sm-12 col-md">
                                                 <div class="control-group">
-                                                    <input type="text" class="form-control" id="date_of_harvest"
-                                                        name="date_of_harvest"
-                                                        placeholder="Enetr the require Quantity" />
+                                                    <input type="date" class="form-control" id="" name=""
+                                                        placeholder="Date of delivery" />
                                                     <p class="help-block text-danger"></p>
                                                 </div>
                                             </div>
-
-
-                                            <!-- <div class="form-row row">
-
-                                                <div class="col-sm-12 col-md">
-                                                    <div class="control-group">
-                                                        <input type="date" class="form-control" id="date_of_supply"
-                                                            name="date_of_supply" placeholder="Date of Supply" />
-                                                        <p class="help-block text-danger"></p>
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-sm-12 col-md">
-                                                    <div class="control-group">
-                                                        <input type="date" class="form-control" id="date_of_harvest"
-                                                            name="date_of_harvest" placeholder="Date of Harvest" />
-                                                        <p class="help-block text-danger"></p>
-                                                    </div>
-                                                </div>
-
-                                            </div> -->
-
-
-
                                             <div>
-                                           
+
                                                 <button class="btn btn-primary py-3 px-5" type="submit"
                                                     id="sendMessageButton">Submit</button>
                                             </div>

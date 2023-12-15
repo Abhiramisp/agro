@@ -16,23 +16,6 @@
                                     <form action="#" method="POST" enctype="multipart/form-data">
 
                                         <div class="form-row row">
-
-                                            <div class="col-md-6">
-                                                <div class="control-group">
-                                                    <input type="text" class="form-control" id="" name=""
-                                                        placeholder="Farmer Name" required="required"
-                                                        data-validation-required-message="Please enter Farmer Name" />
-                                                    <p class="help-block text-danger"></p>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="control-group">
-                                                    <input type="email" class="form-control" id="" name=""
-                                                        placeholder="Farmer number" rows="3" required="required"
-                                                        data-validation-required-message="Please enter Farmer number">
-                                                    <p class="help-block text-danger"></p>
-                                                </div>
-                                            </div>
                                             <div class="col-md-6">
                                                 <div class="control-group">
                                                     <input type="text" class="form-control" id="" name=""
@@ -49,32 +32,48 @@
                                                     <p class="help-block text-danger"></p>
                                                 </div>
                                             </div>
-                                        
                                         </div>
-                                     
-
-
-
+                                        <div class="col-sm-12 col-md">
+                                            <h6>Inspection Date</h6>
                                             <div class="control-group">
-                                                <div class="row">
-                                                    <label for="image" class="col-1">Image:</label>
-                                                    <div class="input-group col">
-                                                        <input type="text" class="form-control file-upload-info"
-                                                            placeholder="Upload File">
-                                                        <span class="input-group-append">
-                                                            <button class="file-upload-browse btn btn-primary"
-                                                                type="button">Upload</button>
-                                                        </span>
-                                                    </div>
-                                                </div>
+                                                <input type="date" class="form-control" id="p_dos" name="p_dos"
+                                                    placeholder="Date of Supply" />
                                                 <p class="help-block text-danger"></p>
                                             </div>
-
-                                            <div>
-                                             
-                                                <button class="btn btn-primary py-3 px-5" type="submit"
-                                                    id="sendMessageButton">Approve</button>
+                                        </div>
+                                        <div class="control-group">
+                                            <div class="row">
+                                                <label for="image" class="col-3">Inspection Image:</label>
+                                                <div class="input-group col">
+                                                    <input type="text" class="form-control file-upload-info"
+                                                        placeholder="Upload File">
+                                                    <span class="input-group-append">
+                                                        <button class="file-upload-browse btn btn-primary"
+                                                            type="button">Upload</button>
+                                                    </span>
+                                                </div>
                                             </div>
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                        <div class="control-group">
+                                            <div class="row">
+                                                <label for="image" class="col-3">Transpoting Image:</label>
+                                                <div class="input-group col">
+                                                    <input type="text" class="form-control file-upload-info"
+                                                        placeholder="Upload File">
+                                                    <span class="input-group-append">
+                                                        <button class="file-upload-browse btn btn-primary"
+                                                            type="button">Upload</button>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                           
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                        <div>
+                                            <button class="btn btn-primary py-3 px-5" type="submit"
+                                                id="sendMessageButton">Approve</button>
+                                        </div>
                                     </form>
                                 </div>
                             </div>

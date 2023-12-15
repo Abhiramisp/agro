@@ -23,7 +23,7 @@
         </div>
         <div class="container px-0">
             <nav class="navbar navbar-light bg-white navbar-expand-xl">
-                <a href="index.html" class="navbar-brand">
+                <a href="Freelancer_homePage" class="navbar-brand">
                     <h1 class="text-primary display-6">AgriConnect</h1>
                 </a>
                 <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse"
@@ -31,20 +31,25 @@
                     <span class="fa fa-bars text-primary"></span>
                 </button>
                 <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
-                    <div class="navbar-nav mx-auto">
-                        <a href="<?php echo base_url(); ?>index.php/Freelancer_homePage"
-                            class="nav-item nav-link active">Home</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Assigments</a>
-                            <div class="dropdown-menu m-0 bg-secondary rounded-0">
-                                <a href="Freelancer_workAssiged" class="dropdown-item">Assigned works</a>
-                                <a href="Freelancer_completedWork" class="dropdown-item">Compeleted Works</a>
 
+                <div class="navbar-nav mx-auto">
+                        <a href="Freelancer_homePage" class="nav-item nav-link active">Home</a>
+                        <a href="shop.html" class="nav-item nav-link">Shop</a>
+                        <a href="shop-detail.html" class="nav-item nav-link">Shop Detail</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu m-0 bg-secondary rounded-0">
+                                <a href="cart.html" class="dropdown-item">Cart</a>
+                                <a href="chackout.html" class="dropdown-item">Chackout</a>
+                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                <a href="404.html" class="dropdown-item">404 Page</a>
                             </div>
                         </div>
-                        <a href="Freelancer_transactionHistory" class="nav-item nav-link">Transaction History</a>
-
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
+
+
+                   
                     <div class="d-flex m-3 me-0">
                         <button
                             class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4"
@@ -62,7 +67,9 @@
                                 <i class="fas fa-user fa-2x"></i></a>
                             <div class="dropdown-menu bg-secondary rounded-0">
                                 <a href="Freelancer_profile " class="dropdown-item">Profile</a>
-
+                                <a href="Freelancer_workAssiged" class="dropdown-item">Assigned works</a>
+                                <a href="Freelancer_completedWork" class="dropdown-item">Compeleted Works</a>
+                                <a href="Freelancer_transactionHistory" class="dropdown-item">Transaction History</a>
                                 <a class="dropdown-item" href="<?php echo base_url(); ?>#" data-toggle="modal"
                                     data-target="#logoutModal">Logout</a>
 
