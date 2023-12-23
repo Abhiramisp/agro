@@ -25,20 +25,22 @@ class Admin_editFarmer extends CI_Controller {
 		$this->load->model('Agro_model');
 		$this->load->library('session');
 		$seller_id = urldecode($this->uri->segment(3));
-		
-  
-		 //$query = $this->Agro_model->getdatafromtable('sellers',);
-		 $comp = array('seller_id'=>$seller_id);
-		 $query = $this->Agro_model->getdatafromtable2('sellers', $comp);
-		 $data['sqldata1']= $query;
+		$user_id = urldecode($this->uri->segment(3));
 
-		 $query2 = $this->Agro_model->getdatafromtable('bank_detials');
-		 $data2['sqldata2']= $query2;
-	  
-	  
+		$primaryTable = 'sellers';
+		$joinTable = 'bank_detials';
+		$commonColumn = $user_id;
+		$userType = 'seller'; 
+		$comp = $seller_id;
+
+		// $comp = array('seller_id'=>$seller_id);
+		// Get joined data based on the condition
+		$data['sqldata1'] = $this->Agro_model->getJoinedDataWithCondition($primaryTable, $joinTable, $commonColumn, $userType, $comp);
+  
 		$this->load->view('admin/header',$data);
-		$this->load->view('admin/nav_bar',$data2);
+		$this->load->view('admin/nav_bar');
 		$this->load->view('admin/farmer_edit_detials');
 		$this->load->view('admin/footer');
 	}
 }
+

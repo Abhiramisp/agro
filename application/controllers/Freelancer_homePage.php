@@ -22,13 +22,24 @@ class Freelancer_homePage extends CI_Controller {
 	{
 		$this->load->model('Agro_model');
 		$this->load->library('session');
-		$seller_id = urldecode($this->uri->segment(3));
-	
-		
-		$active = array('seller_id'=>$seller_id);
 
-		$query = $this->Agro_model->getdatafromtable('sellers',$active);
-		$data['sqldata1'] = $query;
+
+		if (!$this->session->has_userdata('username') || $this->session->userdata('auth') != "FREELANCER") {
+			$datainserr = "Invalid Login Session";
+			header('location: ' . base_url() . 'login/index_error/' . $datainserr);
+			die;
+		} else {
+			$this->load->model('Agro_model');
+			// $id = urldecode($this->uri->segment(3));
+
+			$sess = array('sessi' => $this->session->userdata('username'));
+			// echo $this->session->userdata('username');
+			$active = array('freelancer_number' => $sess['sessi']);
+
+			$query = $this->Agro_model->getdatafromtable('freelancer', $active);
+			$data['sqldata1'] = $query;
+
+			$sess = array('sessi' => $this->session->userdata('username'));
 
         $this->load->view('header',$data);
 		$this->load->view("freelancer/nav");
@@ -47,4 +58,5 @@ class Freelancer_homePage extends CI_Controller {
 		$this->load->view('freelancer/logoutModel');
 		$this->load->view('footer');
 	}
+}
 }

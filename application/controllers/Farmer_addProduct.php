@@ -1,7 +1,8 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Farmer_addProduct extends CI_Controller {
+class Farmer_addProduct extends CI_Controller
+{
 
 	/**
 	 * Index Page for this controller.
@@ -20,10 +21,32 @@ class Farmer_addProduct extends CI_Controller {
 	 */
 	public function index()
 	{
-        $this->load->view('header');
-		$this->load->view("farmers/nav");
-		$this->load->view('farmers/Add_product');
-		$this->load->view('farmers/logoutModel');
-		$this->load->view('footer');
+		$this->load->model('Agro_model');
+		$this->load->library('session');
+
+
+		if (!$this->session->has_userdata('username') || $this->session->userdata('auth') != "FARMER") {
+			$datainserr = "Invalid Login Session";
+			header('location: ' . base_url() . 'login/index_error/' . $datainserr);
+			die;
+		} else {
+			$this->load->model('Agro_model');
+			// $id = urldecode($this->uri->segment(3));
+
+			$sess = array('sessi' => $this->session->userdata('username'));
+
+			$active = array('seller_id' => $sess['sessi']);
+
+			$query = $this->Agro_model->getdatafromtable('sellers', $active);
+			$data['sqldata1'] = $query;
+			$sess = array('sessi' => $this->session->userdata('username'));
+
+			$this->load->view('header');
+			$this->load->view("farmers/nav");
+			$this->load->view('farmers/Add_product');
+			$this->load->view('farmers/logoutModel');
+			$this->load->view('footer');
+		}
 	}
+
 }

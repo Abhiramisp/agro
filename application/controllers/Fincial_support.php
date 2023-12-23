@@ -28,7 +28,7 @@ class Fincial_support extends CI_Controller
 		$returnperiod = $this->input->post('returnperiod');
 		$amount = $this->input->post('amount');
 		$debitfromproduct =$this->input->post('debitfromproduct');
-		// $fname = $this->input->post('fname');
+		$seller_id = $this->input->post('seller_id');
 		// $fmobile =$this->input->post('fmobile');
 
 
@@ -36,7 +36,7 @@ class Fincial_support extends CI_Controller
 	
 		
 		$data = array('purpose_of_money' => $purposeofmoney, 'return_period' => $returnperiod, 
-		'loan_amount' => $amount,'debitfromproduct' => $debitfromproduct);
+		'loan_amount' => $amount,'debitfromproduct' => $debitfromproduct, 'seller_id' => $seller_id );
 //print_r($data); die;
 		$datainserr = "Data Inserted Successfully";
 		$status = $this->Agro_model->insert('financial_support',$data);

@@ -29,6 +29,7 @@
                                                     <div class="control-group">
                                                         <input type="text" class="form-control" id="fname" name="fname"
                                                             placeholder="Your Name" required="required"
+                                                            value="<?php echo $sqldata1[0]->t_name; ?>"
                                                             data-validation-required-message="Please enter your name" />
                                                         <p class="help-block text-danger"></p>
                                                     </div>
@@ -37,6 +38,7 @@
                                                     <div class="control-group">
                                                         <input type="email" class="form-control" id="fmail" name="fmail"
                                                             placeholder="Your Email" required="required"
+                                                            value="<?php echo $sqldata1[0]->t_email; ?>"
                                                             data-validation-required-message="Please enter your email" />
                                                         <p class="help-block text-danger"></p>
                                                     </div>
@@ -46,6 +48,7 @@
                                                         <input type="text" class="form-control" id="fmobile"
                                                             name="fmobile" placeholder="Mobile Number"
                                                             required="required"
+                                                            value="<?php echo $sqldata1[0]->t_number; ?>"
                                                             data-validation-required-message="Please enter a Mobile number" />
                                                         <p class="help-block text-danger"></p>
                                                     </div>
@@ -54,17 +57,11 @@
                                                     <div class="control-group">
                                                         <input type="text" class="form-control" id="fpassword"
                                                             name="fpassword" placeholder="Password" required="required"
+                                                            value="<?php echo $sqldata1[0]->t_password; ?>"
                                                             data-validation-required-message="Please enter a Mobile number" />
                                                         <p class="help-block text-danger"></p>
                                                     </div>
                                                 </div>
-                                            </div>
-
-                                            <div class="control-group">
-                                                <textarea class="form-control" rows="3" id="faddress" name="faddress"
-                                                    placeholder="Address" required="required"
-                                                    data-validation-required-message="Please enter your Address"></textarea>
-                                                <p class="help-block text-danger"></p>
                                             </div>
                                             <div class="form-row row">
 
@@ -72,6 +69,7 @@
                                                     <div class="control-group">
                                                         <input type="text" class="form-control" id="fstate"
                                                             name="fstate" placeholder="State" required="required"
+                                                            value="<?php echo $sqldata1[0]->t_state; ?>"
                                                             data-validation-required-message="Please enter your email"
                                                             value="karnataka" />
                                                         <p class="help-block text-danger"></p>
@@ -86,7 +84,10 @@
 
                                                         <select class="form-control bg-white" id="fcity" name="fcity"
                                                             size="1" onchange="makeSubmenu1(this.value)">
-                                                            <option value="" disabled selected>Choose City</option>
+                                                            <option value="<?php echo $sqldata1[0]->t_city; ?>"
+                                                                disabled selected>
+                                                                <?php echo $sqldata1[0]->t_city; ?>
+                                                            </option>
                                                             <option default> Ariyalur</option>
                                                             <option value="Chengalpattu">Chengalpattu</option>
                                                             <option value="Chennai">Chennai</option>
@@ -99,8 +100,8 @@
                                                     <div class="control-group">
                                                         <select class="form-control bg-white" id="ftaluk" name="ftaluk"
                                                             size="1">
-                                                            <option class="form-control" value="" disabled selected>
-                                                                Choose Taluk
+                                                            <option class="form-control" value="<?php echo $sqldata1[0]->t_taluk; ?>" disabled selected>
+                                                          <?php echo $sqldata1[0]->t_taluk; ?>
                                                             </option>
                                                             <option></option>
                                                         </select>
@@ -113,6 +114,7 @@
                                                     <div class="control-group">
                                                         <input class="form-control" rows="1" id="" name=""
                                                             placeholder="Vehicle Type"
+                                                            value="<?php echo $sqldata1[0]->vehicle_type; ?>"
                                                             data-validation-required-message="Please enter you Vehicle Type" />
                                                         <p class="help-block text-danger"></p>
                                                     </div>
@@ -121,6 +123,7 @@
                                                     <div class="control-group">
                                                         <input class="form-control" rows="1" id="" name=""
                                                             placeholder="Vehicle Number"
+                                                            value="<?php echo $sqldata1[0]->vehicle_number; ?>"
                                                             data-validation-required-message="Please enter you Vehicle Number" />
                                                         <p class="help-block text-danger"></p>
                                                     </div>

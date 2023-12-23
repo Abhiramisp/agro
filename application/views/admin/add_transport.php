@@ -109,44 +109,41 @@
 
                                         <h3>Bank Detials </h3>
                                         <div class="col">
-                                            <div class="control-group">
-                                                <input type="text" class="form-control" id="" name=""
-                                                    placeholder="Bank Name"
-                                                    data-validation-required-message="Please enter name of bank" />
-                                                <p class="help-block text-danger"></p>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="control-group">
-                                                <input type="text" class="form-control" id="" name=""
-                                                    placeholder="Branch Name"
-                                                    data-validation-required-message="Please enter Branch name" />
-                                                <p class="help-block text-danger"></p>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="control-group">
-                                                <input type="text" class="form-control" id="fname" name="fname"
-                                                    placeholder="Account Number"
-                                                    data-validation-required-message="Please enter your account number" />
-                                                <p class="help-block text-danger"></p>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="control-group">
-                                                <input type="text" class="form-control" id="" name=""
-                                                    placeholder="IFSC Code"
-                                                    data-validation-required-message="Please enter your IFSC Code" />
-                                                <p class="help-block text-danger"></p>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="control-group">
-                                                <input type="text" class="form-control" id="" name="" placeholder="UPID"
-                                                    data-validation-required-message="Please enter your UPID" />
-                                                <p class="help-block text-danger"></p>
-                                            </div>
-                                        </div>
+                                    <div class="control-group">
+                                        <input type="text" class="form-control" id="bank_name" name="bank_name" placeholder="Bank Name"
+                                            data-validation-required-message="Please enter name of bank" />
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="control-group">
+                                        <input type="text" class="form-control" id="branch_name" name="branch_name" placeholder="Branch Name"
+                                            data-validation-required-message="Please enter Branch name" />
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="control-group">
+                                        <input type="text" class="form-control" id="AC_num" name="AC_num"
+                                            placeholder="Account Number"
+                                            data-validation-required-message="Please enter your account number" />
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="control-group">
+                                        <input type="text" class="form-control" id="ifsc" name="ifsc" placeholder="IFSC Code"
+                                            data-validation-required-message="Please enter your IFSC Code" />
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="control-group">
+                                        <input type="text" class="form-control" id="upid" name="upid" placeholder="UPID"
+                                            data-validation-required-message="Please enter your UPID" />
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
                                         <div>
                                             <button class="btn py-3 px-5" style="background-color:#46c6ce; color:white;"
                                                 type="reset" id="sendMessageButton">Reset</button>

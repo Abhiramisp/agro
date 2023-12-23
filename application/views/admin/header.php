@@ -20,42 +20,9 @@
     <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            document.getElementById('selectionDropdown').addEventListener('change', function () {
-                var selectedOption = this.value;
-                var detailsContainer = document.getElementById('detailsContainer');
-
-                if (selectedOption === 'showDetails') {
-                    detailsContainer.style.display = 'block'; // Show the container
-                } else {
-                    detailsContainer.style.display = 'none'; // Hide the container if another option is selected
-                }
-            });
-        });
-
-        document.addEventListener('DOMContentLoaded', function() {
-        var approveButton = document.getElementById('approveButton');
-        var rejectButton = document.getElementById('rejectButton');
-
-        approveButton.addEventListener('click', function() {
-            approveButton.style.display = 'none';
-            rejectButton.style.display = 'block';
-        });
-
-        rejectButton.addEventListener('click', function() {
-            rejectButton.style.display = 'none';
-            approveButton.style.display = 'block';
-        });
-    });
-    
-    </script>
-
-
-
-    <script type="text/javascript">
+      <script type="text/javascript">
         $(document).ready(function () {
-            $('#example').DataTable();
+            new DataTable('#example');
         });
     </script>
     <style>

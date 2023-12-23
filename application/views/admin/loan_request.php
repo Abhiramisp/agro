@@ -22,33 +22,50 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>sam</td>
-                                            <td>3245689</td>
-                                            <td>1000000</td>
-                                            <td>48 mount</td>
-                                            <td>
-                                                <div class="d-flex ">
-                                                    <div class="me-1">
-                                                        <form action="<?php echo base_url(); ?>index.php/Admin_loanApprove" method="GET">
-                                                            <input type="hidden" name="id">
-                                                            <button class="btn" type="submit"><a
-                                                                    href="<?php echo base_url(); ?>index.php/Admin_loanApprove? id='.$id.'">Approve</button>
-                                                        </form>
-                                                    </div>
-                                                    <div class="me-1">
-                                                        <form action="<?php echo base_url(); ?>index.php/" method="GET">
-                                                            <input type="hidden" name="id">
-                                                            <button class="btn" type="submit"><a
-                                                                    href="fetchAuc.php? id='.$id.'">Reject</button>
-                                                        </form>
-                                                    </div>
+                                        <?php $count = 1;
+                                        foreach ($sqldata1 as $row) { ?>
+                                            <tr>
 
-                                                </div>
-                                            </td>
-                                            </td>
-                                        </tr>
+                                                <td>
+                                                    <?php echo $count; ?>
+                                                </td>
+                                                <td>
+                                                    <?php echo $row->seller_name; ?>
+                                                </td>
+                                                <td>
+                                                    <?php echo $row->seller_number; ?>
+                                                </td>
+                                                <td>
+                                                    <?php echo $row->loan_amount; ?>
+                                                </td>
+                                                <td>
+                                                    <?php echo $row->return_period;  ?>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex ">
+                                                        <div class="me-1">
+                                                            <form
+                                                                action="<?php echo base_url(); ?>index.php/Admin_loanApprove"
+                                                                method="GET">
+                                                                <input type="hidden" name="id">
+                                                                <button class="btn" type="submit"><a
+                                                                        href="<?php echo base_url(); ?>index.php/Admin_loanApprove? id='.$id.'">Approve</button>
+                                                            </form>
+                                                        </div>
+                                                        <div class="me-1">
+                                                            <form action="<?php echo base_url(); ?>index.php/" method="GET">
+                                                                <input type="hidden" name="id">
+                                                                <button class="btn" type="submit"><a
+                                                                        href="fetchAuc.php? id='.$id.'">Reject</button>
+                                                            </form>
+                                                        </div>
+
+                                                    </div>
+                                                </td>
+
+                                            </tr>
+                                            <?php $count++;
+                                        } ?>
                                     </tbody>
                                 </table>
                             </div>

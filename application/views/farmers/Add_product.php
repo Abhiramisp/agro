@@ -35,10 +35,17 @@
                                             </div>
                                         </div>
                                         <div class="">
-                                            <div class="control-group">
-                                                <input type="text" class="form-control" id="p_type" name="p_type"
-                                                    placeholder="Product Type" required="required"
-                                                    data-validation-required-message="Please enter Product Type" />
+                                            <div class="control-group ">
+                                                <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+                                                <select class="form-control bg-white" id="p_type" name="p_type" size="1"
+                                                    onchange="">
+                                                    <option value="" disabled selected>Choose Sub Product Type
+                                                    </option>
+                                                    <option default>Immediate sell product</option>
+                                                    <option value="Future ">Future product</option>
+                                                    <option value="Short-term ">Short-term Product</option>
+                                                </select>
                                                 <p class="help-block text-danger"></p>
                                             </div>
                                         </div>
@@ -133,7 +140,7 @@
 
                                     </div>
 
-                      
+
                                     <div class="control-group">
                                         <div class="row">
                                             <label for="image"> Upload Image</label>
@@ -142,8 +149,8 @@
                                                     <span class="input-group-text">Upload</span>
                                                 </div> -->
                                                 <div class="custom-file col">
-                                                    <input type="file" class="form-control custom-file-input" id="productimage"
-                                                        name="productimage">
+                                                    <input type="file" class="form-control custom-file-input"
+                                                        id="productimage" name="productimage">
                                                     <!-- <label class="custom-file-label">Choose file</label> -->
                                                 </div>
                                             </div>

@@ -22,13 +22,28 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>1</td>
-                                            <td>sam</td>
-                                            <td>3245689</td>
-                                            <td>1000000</td>
-                                            <td>48 mount</td>
-                                         
-                                            </td>
+                                            <?php $count = 1;
+                                            foreach ($sqldata1 as $row) { ?>
+                                            <tr>
+
+                                                <td>
+                                                    <?php echo $count; ?>
+                                                </td>
+                                                <td>
+                                                    <?php echo $row->seller_name; ?>
+                                                </td>
+                                                <td>
+                                                    <?php echo $row->seller_number; ?>
+                                                </td>
+                                                <td>
+                                                    <?php echo $row->loan_amount; ?>
+                                                </td>
+                                                <td>
+                                                    <?php echo $row->return_period; ?>
+                                                </td>
+
+                                                <?php $count++;
+                                            } ?>
                                         </tr>
                                     </tbody>
                                 </table>

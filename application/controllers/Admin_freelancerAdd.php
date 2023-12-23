@@ -42,6 +42,27 @@ class Admin_freelancerAdd extends CI_Controller
 		//print_r($data); die;
 		$datainserr = "Data Inserted Successfully";
 		$status = $this->Agro_model->insert('freelancer', $data);
+
+		// bank 
+		$id = $this->db->insert_id();
+		$bank_name = $this->input->post('bank_name');
+		$branch_name = $this->input->post('branch_name');
+		$AC_num = $this->input->post('AC_num');
+		$ifsc = $this->input->post('ifsc');
+		$upid = $this->input->post('upid');
+
+		$data2 = array('bank_name' => $bank_name,
+			'bank_branch' => $branch_name,
+			'bank_ifsc' => $ifsc,
+			'bank_ac_number' => $AC_num,
+			'bank_upid' => $upid,
+			'user_id' => $id, 
+			'user_type' => 'freelancer',
+		);
+		//print_r($data); die;
+		$datainserr = "Data Inserted Successfully";
+		$status = $this->Agro_model->insert('bank_detials', $data2);
+
 		header('location: ' . base_url() . 'index.php/Admin_freelanceList');
 
 

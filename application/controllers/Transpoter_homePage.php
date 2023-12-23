@@ -1,7 +1,8 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Transpoter_homePage extends CI_Controller {
+class Transpoter_homePage extends CI_Controller
+{
 
 	/**
 	 * Index Page for this controller.
@@ -20,21 +21,45 @@ class Transpoter_homePage extends CI_Controller {
 	 */
 	public function index()
 	{
-        $this->load->view('header');
-		$this->load->view("transport/nav");
-		$this->load->view('model_search');
-        $this->load->view('transport/hero');
-        $this->load->view('transport/star_product');
-        $this->load->view('transport/bestsaler_product');
-        $this->load->view('Featurs1');
-        $this->load->view('transport/Fruits');
-        $this->load->view('Featurs');
-        $this->load->view('transport/Vesitable');
-        $this->load->view('banner');
-        $this->load->view('transport/bestsaler_product');
-        $this->load->view('fact');
-        $this->load->view('tastimonial');
-		$this->load->view('transport/logoutModel');
-		$this->load->view('footer');
+		$this->load->model('Agro_model');
+		$this->load->library('session');
+
+
+		if (!$this->session->has_userdata('username') || $this->session->userdata('auth') != "TRANSPORT") {
+			$datainserr = "Invalid Login Session";
+			header('location: ' . base_url() . 'login/index_error/' . $datainserr);
+			die;
+		} else {
+			$this->load->model('Agro_model');
+			// $id = urldecode($this->uri->segment(3));
+
+			$sess = array('sessi' => $this->session->userdata('username'));
+			// echo $this->session->userdata('username');
+		
+			$active = array('t_number' => $sess['sessi']);
+
+			$query = $this->Agro_model->getdatafromtable('transport', $active);
+			$data['sqldata1'] = $query;
+
+			$sess = array('sessi' => $this->session->userdata('username'));
+
+			$this->load->view('header', $data);
+			$this->load->view('header');
+			$this->load->view("transport/nav");
+			$this->load->view('model_search');
+			$this->load->view('transport/hero');
+			$this->load->view('transport/star_product');
+			$this->load->view('transport/bestsaler_product');
+			$this->load->view('Featurs1');
+			$this->load->view('transport/Fruits');
+			$this->load->view('Featurs');
+			$this->load->view('transport/Vesitable');
+			$this->load->view('banner');
+			$this->load->view('transport/bestsaler_product');
+			$this->load->view('fact');
+			$this->load->view('tastimonial');
+			$this->load->view('transport/logoutModel');
+			$this->load->view('footer');
+		}
 	}
 }

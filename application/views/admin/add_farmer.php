@@ -132,7 +132,7 @@
                                 </div>
                                 <div class="col">
                                     <div class="control-group">
-                                        <input type="text" class="form-control" id="ifsc" name="ifsd" placeholder="IFSC Code"
+                                        <input type="text" class="form-control" id="ifsc" name="ifsc" placeholder="IFSC Code"
                                             data-validation-required-message="Please enter your IFSC Code" />
                                         <p class="help-block text-danger"></p>
                                     </div>

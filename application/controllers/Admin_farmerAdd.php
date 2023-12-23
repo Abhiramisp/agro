@@ -35,32 +35,36 @@ class Admin_farmerAdd extends CI_Controller
 		$ftaluk = $this->input->post('ftaluk');
 		$fpassword = base64_encode($this->input->post('fpassword'));
 
-// bank 
-		$bank_name= $this->input->post('bank_name');
-		$branch_name = $this->input->post('branch_name');
-		$AC_num = $this->input->post('AC_num');
-		$ifsc = $this->input->post('ifsc');
-		$upid = $this->input->post('upid');
 		
+
 
 		$data = array('seller_number' => $fmobile, 'seller_email' => $fmail, 'seller_supply_capacity' => $fcapacity,
 			'seller_land_area' => $flandarea, 'seller_state' => $fstate, 'seller_product' => $fproduct,
 			'seller_city' => $fcity, 'seller_name' => $fname, 'seller_password' => $fpassword, 'seller_taluk' => $ftaluk);
 		//print_r($data); die;
-				$datainserr = "Data Inserted Successfully";
+		$datainserr = "Data Inserted Successfully";
 		$status = $this->Agro_model->insert('sellers', $data);
 
-		$data2 = array('bank_name' => $bank_name, 
-		'bank_branch' => $branch_name, 
-		'bank_ifsc' => $AC_num,
-		'bank_ac_number' => $ifsc, 
-		'bank_upid' => $upid, 
-		'user_type'=>'seller',
-);
-	//print_r($data); die;
-			$datainserr = "Data Inserted Successfully";
-	$status = $this->Agro_model->insert('bank_detials', $data2);
-	
+		// bank 
+		$seller_id = $this->db->insert_id();
+		$bank_name = $this->input->post('bank_name');
+		$branch_name = $this->input->post('branch_name');
+		$AC_num = $this->input->post('AC_num');
+		$ifsc = $this->input->post('ifsc');
+		$upid = $this->input->post('upid');
+
+		$data2 = array('bank_name' => $bank_name,
+			'bank_branch' => $branch_name,
+			'bank_ifsc' => $ifsc,
+			'bank_ac_number' => $AC_num,
+			'bank_upid' => $upid,
+			'user_id' => $seller_id, 
+			'user_type' => 'seller',
+		);
+		//print_r($data); die;
+		$datainserr = "Data Inserted Successfully";
+		$status = $this->Agro_model->insert('bank_detials', $data2);
+
 		header('location: ' . base_url() . 'index.php/Admin_farmerList');
 
 

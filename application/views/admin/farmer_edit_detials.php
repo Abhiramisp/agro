@@ -143,7 +143,7 @@
                                                     <div class="control-group">
                                                         <input type="text" class="form-control" id="bank_name"
                                                             name="bank_name" placeholder="Bank Name"
-                                                            value="<?php echo $sqldata2[0]->bank_name; ?>"
+                                                            value="<?php echo $sqldata1[0]->bank_name; ?>"
                                                             data-validation-required-message="Please enter name of bank" />
                                                         <p class="help-block text-danger"></p>
                                                     </div>
@@ -151,7 +151,7 @@
                                                 <div class="col">
                                                     <div class="control-group">
                                                         <input type="text" class="form-control" id="branch_name"
-                                                            value="<?php echo $sqldata2[0]->bank_branch; ?>"
+                                                            value="<?php echo $sqldata1[0]->bank_branch; ?>"
                                                             name="branch_name" placeholder="Branch Name"
                                                             data-validation-required-message="Please enter Branch name" />
                                                         <p class="help-block text-danger"></p>
@@ -161,7 +161,7 @@
                                                     <div class="control-group">
                                                         <input type="text" class="form-control" id="AC_num"
                                                             name="AC_num" placeholder="Account Number"
-                                                            value="<?php echo $sqldata2[0]->bank_ac_number; ?>"
+                                                            value="<?php echo $sqldata1[0]->bank_ac_number; ?>"
                                                             data-validation-required-message="Please enter your account number" />
                                                         <p class="help-block text-danger"></p>
                                                     </div>
@@ -169,7 +169,7 @@
                                                 <div class="col">
                                                     <div class="control-group">
                                                         <input type="text" class="form-control" id="ifsc" name="ifsd"
-                                                            value="<?php echo $sqldata2[0]->bank_ifsc; ?>"
+                                                            value="<?php echo $sqldata1[0]->bank_ifsc; ?>"
                                                             placeholder="IFSC Code"
                                                             data-validation-required-message="Please enter your IFSC Code" />
                                                         <p class="help-block text-danger"></p>
@@ -179,7 +179,7 @@
                                                     <div class="control-group">
                                                         <input type="text" class="form-control" id="upid" name="upid"
                                                             placeholder="UPID"
-                                                            value="<?php echo $sqldata2[0]->bank_upid; ?>"
+                                                            value="<?php echo $sqldata1[0]->bank_upid; ?>"
                                                             data-validation-required-message="Please enter your UPID" />
                                                         <p class="help-block text-danger"></p>
                                                     </div>

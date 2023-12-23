@@ -23,23 +23,38 @@
                   </thead>
                   <tbody>
 
-                    <tr>
 
-                      <td>1</td>
-                      <td>Apple</td>
-                      <td>Fruit</td>
-                      <td>org</td>
-                      <td>5000</td>
-                      <td>
+                    <?php $count = 1;
+                    foreach ($sqldata1 as $row) { ?>
+                      <tr>
 
-                        <a style="margin:2px" href="<?php echo base_url() ?>"><span style="color:blue"><i
-                              class="fa fa-edit" aria-hidden="true"></i></span></a>
+                        <td>
+                          <?php echo $count; ?>
+                        </td>
+                        <td>
+                          <?php echo $row->product_name; ?>
+                        </td>
+                        <td>
+                          <?php echo $row->product_category; ?>
+                        </td>
+                        <td>
+                          <?php echo $row->product_type; ?>
+                        </td>
+                        <td>
+                          <?php echo $row->shelf_life; ?>
+                        </td>
+                        <td>
 
-                        <a style="margin:2px" href="<?php echo base_url() ?>"><span style="color:red"><i
-                              class="fa fa-trash" aria-hidden="true"></i></span></a>
+                          <a style="margin:2px" href="<?php echo base_url() ?>"><span style="color:blue"><i
+                                class="fa fa-edit" aria-hidden="true"></i></span></a>
 
-                      </td>
-                    </tr>
+                          <a style="margin:2px" href="<?php echo base_url() ?>"><span style="color:red"><i
+                                class="fa fa-trash" aria-hidden="true"></i></span></a>
+
+                        </td>
+                      </tr>
+                      <?php $count++;
+                    } ?>
                   </tbody>
                 </table>
               </div>

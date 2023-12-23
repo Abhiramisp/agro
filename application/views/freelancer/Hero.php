@@ -2,6 +2,7 @@
     <div class="container-fluid py-5 mb-5 hero-header">
             <div class="container py-5">
                 <div class="row g-5 align-items-center">
+                <h1>Welcome <?php echo $sqldata1[0]->freelancer_name; ?></h1>
                     <div class="col-md-12 col-lg-7">
                         <h4 class="mb-3 text-secondary">100% Organic Foods</h4>
                         <h1 class="mb-5 display-3 text-primary">Organic Veggies & Fruits Foods</h1>

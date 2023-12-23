@@ -20,10 +20,33 @@ class Buyer_searchPage extends CI_Controller {
 	 */
 	public function index()
 	{
-        $this->load->view('header');
+		$this->load->model('Agro_model');
+		$this->load->library('session');
+
+
+		if (!$this->session->has_userdata('username') || $this->session->userdata('auth') != "BUYER") {
+			$datainserr = "Invalid Login Session";
+			header('location: ' . base_url() . 'login/index_error/' . $datainserr);
+			die;
+		} else {
+			$this->load->model('Agro_model');
+			// $id = urldecode($this->uri->segment(3));
+
+			$sess = array('sessi' => $this->session->userdata('username'));
+			// echo $this->session->userdata('username');
+			$active = array('b_number' => $sess['sessi']);
+
+			$query = $this->Agro_model->getdatafromtable('buyer', $active);
+			$data['sqldata1'] = $query;
+
+			$sess = array('sessi' => $this->session->userdata('username'));
+
+			$this->load->view('header', $data);
+      
 		$this->load->view("buyers/nav");
 		$this->load->view('buyers/search_page');
 		$this->load->view('buyers/logoutModel');
 		$this->load->view('footer');
 	}
+}
 }

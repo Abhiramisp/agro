@@ -2,7 +2,7 @@
     <div class="container py-5">
         <div class="container py-5 ">
             <header class="text-center text-white">
-                <h1 class="display-4">Work Assiged</h1>
+                <h1 class="display-4">Transaction History</h1>
 
             </header>
             <div class="row py-5 align-items-center justify-content-center">

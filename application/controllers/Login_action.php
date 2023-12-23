@@ -1,7 +1,8 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Login_action extends CI_Controller {
+class Login_action extends CI_Controller
+{
 
 	/**
 	 * Index Page for this controller.
@@ -20,88 +21,91 @@ class Login_action extends CI_Controller {
 	 */
 	public function index()
 	{
-		
+
 		$this->load->helper('url');
 		$this->load->library('session');
 		$this->session->sess_expiration = '3600';
-		if($this->input->post('user')){
-			if($this->input->post('optradio')== "farmer"){
+		if ($this->input->post('user')) {
+			if ($this->input->post('optradio') == "farmer") {
 				$table = "sellers";
 				$colname = "seller_number";
 				$colname2 = "seller_password";
-			     
-		}else if($this->input->post('optradio')=="freelancer"){
+
+			} else if ($this->input->post('optradio') == "freelancer") {
 				$table = "freelancer";
 				$colname = "freelancer_number";
 				$colname2 = "freelancer_password";
-	 }else if($this->input->post('optradio')=="transport"){
+			} else if ($this->input->post('optradio') == "transport") {
 				$table = "transport";
 				$colname = "t_number";
 				$colname2 = "t_password";
-				
-			}else{
+
+			} else {
 				$table = "buyer";
 				$colname = "b_number";
 				$colname2 = "b_password";
-				
-			  }
+
+			}
 			$user = $this->input->post('user');
 			$pass = $this->input->post('pass');
 			$pass = base64_encode($pass);
-			
+
 			$check_db = array($colname => $user, $colname2 => $pass);
 			$this->load->model('Agro_model');
-			$productid= $this->uri->segment(3);
-			  if($this->Agro_model->check($table, $check_db)){
-				  if($table == "sellers"){
-					  $newdata = array('username'=>$user,'auth'=>'FARMER','logged_in' => TRUE);
-						$this->session->set_userdata($newdata);
-					  header('location: '.base_url().'index.php/Farmer_homePage');
-					  die;
-				 
-				  }else if($table == "freelancer"){
-					  $newdata = array('username'=>$user,'auth'=>'FREELANCER','logged_in' => TRUE);
-						$this->session->set_userdata($newdata);
-					  header('location: '.base_url().'index.php/Freelancer_homePage');
-					  die;
-					  
-					 }else if($table == "transport"){
-					  $newdata = array('username'=>$user,'auth'=>'TRANSPORT','logged_in' => TRUE);
-						$this->session->set_userdata($newdata);
-					  header('location: '.base_url().'index.php/Transpoter_homePage');
-					  die; 
-					  
-					  
-				  }else if($table == "buyer"){
-					  $newdata = array('username'=>$user,'auth'=>'BUYER','logged_in' => TRUE);
-						$this->session->set_userdata($newdata);
-					 header('location: '.base_url().'index.php/Buyer_homePage');
-					 die; 
-				  }
-			  }else{
-				  $datainserr = "Invalid Password";
-				  header('location: '.base_url().'#'. $datainserr);
-				  die;
-			  }
-			  die;
-		}else{
+			$productid = $this->uri->segment(3);
+
+			if ($this->Agro_model->check($table, $check_db)) {
+				if ($table == "sellers") {
+					$newdata = array('username' => $user, 'auth' => 'FARMER', 'logged_in' => TRUE);
+					$this->session->set_userdata($newdata);
+					header('location: ' . base_url() . 'index.php/Farmer_homePage');
+					
+					die;
+
+				} else if ($table == "freelancer") {
+					$newdata = array('username' => $user, 'auth' => 'FREELANCER', 'logged_in' => TRUE);
+					$this->session->set_userdata($newdata);
+					header('location: ' . base_url() . 'index.php/Freelancer_homePage');
+					die;
+
+				} else if ($table == "transport") {
+					$newdata = array('username' => $user, 'auth' => 'TRANSPORT', 'logged_in' => TRUE);
+					$this->session->set_userdata($newdata);
+					header('location: ' . base_url() . 'index.php/Transpoter_homePage');
+					die;
+
+
+				} else if ($table == "buyer") {
+					$newdata = array('username' => $user, 'auth' => 'BUYER', 'logged_in' => TRUE);
+					$this->session->set_userdata($newdata);
+					header('location: ' . base_url() . 'index.php/Buyer_homePage');
+					die;
+				}
+			} else {
+				$datainserr = "Invalid Password";
+				header('location: ' . base_url() . '#' . $datainserr);
+				die;
+			}
+			die;
+		} else {
 			//$this->load->view('header');
 			$this->load->view('login');
 			$this->load->view('footer');
 		}
-		
-		
+
+
 	}
-	public function index_error(){
-			$alertmsg = $this->uri->segment(3);
-			$alertmsg = urldecode($alertmsg);
-			echo '<script language="javascript">';
-			echo 'alert("'.$alertmsg.'")';  //not showing an alert box.
-			echo '</script>';
-			//$this->load->view('header');
-			$this->load->view('login');
-			$this->load->view('footer');
-			
+	public function index_error()
+	{
+		$alertmsg = $this->uri->segment(3);
+		$alertmsg = urldecode($alertmsg);
+		echo '<script language="javascript">';
+		echo 'alert("' . $alertmsg . '")';  //not showing an alert box.
+		echo '</script>';
+		//$this->load->view('header');
+		$this->load->view('login');
+		$this->load->view('footer');
+
 	}
-	
+
 }

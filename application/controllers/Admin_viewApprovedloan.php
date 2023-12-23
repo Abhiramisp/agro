@@ -20,6 +20,17 @@ class Admin_viewApprovedloan extends CI_Controller {
 	 */
 	public function index()
 	{
+		$this->load->model('Agro_model');
+		$this->load->library('session');
+
+		$table1 = 'financial_support';
+		$table2 = 'sellers';
+		$commonColumn = 'seller_id';
+
+		$query = $this->Agro_model->getJoinedData($table1, $table2, $commonColumn);
+		$data['sqldata1'] = $query;
+
+		$this->load->view('admin/header', $data);
 		$this->load->view('admin/header');
 		$this->load->view('admin/nav_bar');
 		$this->load->view('admin/approved_loan');

@@ -1,7 +1,8 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Admin_viewLoanrequest extends CI_Controller {
+class Admin_viewLoanrequest extends CI_Controller
+{
 
 	/**
 	 * Index Page for this controller.
@@ -20,7 +21,18 @@ class Admin_viewLoanrequest extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('admin/header');
+
+		$this->load->model('Agro_model');
+		$this->load->library('session');
+
+		$table1 = 'financial_support';
+		$table2 = 'sellers';
+		$commonColumn = 'seller_id';
+
+		$query = $this->Agro_model->getJoinedData($table1, $table2, $commonColumn);
+		$data['sqldata1'] = $query;
+
+		$this->load->view('admin/header', $data);
 		$this->load->view('admin/nav_bar');
 		$this->load->view('admin/loan_request');
 		$this->load->view('admin/footer');

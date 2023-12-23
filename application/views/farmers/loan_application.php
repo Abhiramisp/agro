@@ -26,8 +26,7 @@
                 </div><div class="form-row ">
                     <div class="form-group col-md-6">
 
-                        <input type="hidden" class="form-control" id="fmobile" name="fmobile">
-                        <input type="hidden" class="form-control" id="fname" name="fname">
+                        <input type="hidden" class="form-control" id="seller_id" name="seller_id" value="<?php echo $sqldata1[0]->seller_id; ?>">
                         <label for="inputPassword4">Debit from Product Value</label><br>
                         <div class=" container">
                             <input type="radio" class="mr-2" id="debitfromproduct" name="debitfromproduct"

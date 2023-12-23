@@ -34,6 +34,13 @@ class Admin_editFreelancer extends CI_Controller {
 		 $query2 = $this->Agro_model->getdatafromtable('bank_detials');
 		 $data2['sqldata2']= $query2;
 	  
+		// $primaryTable = 'freelancer';
+		// $joinTable = 'bank_detials';
+		// $commonColumn = 'id';
+		// $userType = 'seller'; 
+
+		// // Get joined data based on the condition
+		// $data['sqldata1'] = $this->Agro_model->getJoinedDataWithCondition($primaryTable, $joinTable, $commonColumn, $userType, );
 
 		$this->load->view('admin/header',$data);
 		$this->load->view('admin/nav_bar',$data2);

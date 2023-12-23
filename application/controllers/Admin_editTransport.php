@@ -34,6 +34,15 @@ class Admin_editTransport extends CI_Controller {
 		 $data2['sqldata2']= $query2;
 
 
+		 
+		// $primaryTable = 'transport';
+		// $joinTable = 'bank_detials';
+		// $commonColumn = 'id';
+		// $userType = 'seller'; 
+
+		// // Get joined data based on the condition
+		// $data['sqldata1'] = $this->Agro_model->getJoinedDataWithCondition($primaryTable, $joinTable, $commonColumn, $userType, );
+
 		$this->load->view('admin/header',$data);
 		$this->load->view('admin/nav_bar',$data2);
 		$this->load->view('admin/transport_edit_detials');
